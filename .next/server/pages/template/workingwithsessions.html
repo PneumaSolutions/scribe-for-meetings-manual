@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Working within a Session - Remote Incident Manager Documentation</title><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/css/aa3518fd57694e9f.css" as="style"/><link rel="stylesheet" href="/_next/static/css/aa3518fd57694e9f.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-cf1eebb864da6905.js" defer=""></script><script src="/_next/static/chunks/framework-0a897eab13466586.js" defer=""></script><script src="/_next/static/chunks/main-b155a78e95213c41.js" defer=""></script><script src="/_next/static/chunks/pages/_app-124ec654690f191c.js" defer=""></script><script src="/_next/static/chunks/pages/template/workingwithsessions-dc5ac7e43a6d0351.js" defer=""></script><script src="/_next/static/cmXcQ_r2TQVpi_9IsN491/_buildManifest.js" defer=""></script><script src="/_next/static/cmXcQ_r2TQVpi_9IsN491/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div><h2>Remote Incident Manager (RIM)</h2><div class="platform-switcher"><button type="button" hidden="">Switch to Windows content</button><button type="button">Switch to macOS content</button></div></div><div class="container-fluid"><div class="sidebar"><div class="navbar navbar-default" role="navigation"><div class="row flex-nowrap"><div class="col-auto px-0"><div id="sidebar" class="collapse show collapse-horizontal" aria-expanded="true"><ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navList"><li class="nav-item"><a href="/en">Welcome</a></li><li class="nav-item"><a href="/en/systemspecs">System Requirements</a></li><li class="nav-item"><a href="/en/installation">Installation</a></li><li class="nav-item"><a href="/en/gettingconnected">Getting Connected</a></li><li class="nav-item"><a href="/en/workingwithsessions">Working within a Session</a></li><li class="nav-item"><a href="/en/dashboard">The Rim Management Dashboard</a></li><li class="nav-item"><a href="/en/faq">Frequently Asked Questions</a></li><li class="nav-item"><a href="/en/plans">Plans and Purchasing</a></li><li class="nav-item"><a href="/en/changelog">Change Log</a></li></ul></div></div></div></div><div class="search"><button class="text-base flex gap-2 items-center px-4 py-2 z-50 relative   text-slate-500 dark:text-slate-400  hover:text-slate-700 dark:hover:text-slate-300   transition-colors   rounded-md   border border-slate-200 dark:border-slate-500 hover:border-slate-300 dark:hover:border-slate-500   min-w-[300px] "><svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><span class="border border-l h-5"></span><span class="inline-block ml-4">Search...</span><kbd class="absolute right-3 top-2.5   pointer-events-none inline-flex h-5 select-none items-center gap-1   rounded border border-slate-100 bg-slate-100 px-1.5   font-mono text-[10px] font-medium   text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400   opacity-100 "><span class="text-xs">⌘</span>K</kbd> </button></div></div><main class="col ps-md-2 pt-2"><div class="page-header pt-3"><h2>Things to Know before you Begin</h2>
+<p>A few things will happen immediately after the connection is established.</p>
+<div><ul>
+<li>The remote control window for the session will appear.</li>
+<li>You will be informed about the status of the running screen reader, or lack thereof, on the client&#x27;s machine.</li>
+<li>If the client is running a screen reader, a toast notification informing the user that the remote session has begun will provide instant confirmation that the user&#x27;s system audio is working.</li>
+<li>A Mac target will pop up the keyboard setup assistant if this is the first time a controller has connected to it.<!-- -->
+<ul>
+<li>This is for the Karabiner virtual keyboard, which listens to keyboard commands sent to it by a controller.</li>
+<li>As such, you will want to walk the target computer through the setup assistant, because it will be listening for remote keyboard presses in the identification process, not the Mac&#x27;s own keyboard.</li>
+</ul>
+</li>
+<li>Last but not least, all keyboard and mouse input will immediately be directed to the target computer. To direct control back to your machine, do either of the following:<!-- -->
+<ul>
+<li>Press Windows+Shift+Backspace.</li>
+<li>Right-click the RIM window&#x27;s title bar.</li>
+<li>Left-click the RIM icon.</li>
+</ul>
+</li>
+</ul></div>
+<div hidden=""><ul>
+<li>The remote control window for the session will appear.</li>
+<li>You will be informed about the status of the running screen reader, or lack thereof, on the client&#x27;s machine.</li>
+<li>If the client is running a screen reader, a toast notification informing the user that the remote session has begun will provide instant confirmation that the user&#x27;s system audio is working.</li>
+<li>A Mac target will pop up the keyboard setup assistant if this is the first time a controller has connected to it.<!-- -->
+<ul>
+<li>This is for the Karabiner virtual keyboard, which listens to keyboard commands sent to it by a controller.</li>
+<li>As such, you will want to walk the target computer through the setup assistant, because it will be listening for remote keyboard presses in the identification process, not the Mac&#x27;s own keyboard.</li>
+</ul>
+</li>
+<li>Last but not least, all keyboard and mouse input will immediately be directed to the target computer. To direct control back to your machine, do either of the following:<!-- -->
+<ul>
+<li>Press Option+Shift+Backspace.</li>
+<li>Click on the large RIM icon in the upper left-hand corner of the session window.</li>
+</ul>
+</li>
+</ul></div>
+<h2>Remote Control Zone</h2>
+<p>At this point, you&#x27;re all set to perform whatever tasks need doing on the client side. Should you need to switch back to controlling your own machine, bring up the RIM menu, then select the &quot;Minimize session&quot; option. You will be taken back to your machine until you switch back into the session window or press Windows+Shift+Backspace again. When you go back into the session window, keyboard and mouse input will once again be directed to the client computer.</p>
+<p>Once you&#x27;re done, either the controller or the target can go into the RIM menu and choose the &quot;Disconnect Session&quot; option. When the session ends, the target machine will get a toast notification informing them of this.</p>
+<h2>The RIM Menu</h2>
+<p>As mentioned earlier, accessing the RIM menu directs you back to your machine. There are a number of options in this menu. They include:</p>
+<div><ul>
+<li>Update RIM on Target: Forces an update of RIM on the target computer<!-- -->
+<ul>
+<li>This option shows if the target&#x27;s machine is running an older version of RIM.</li>
+</ul>
+</li>
+<li>Minimize Session (<strong>Windows+Shift+M</strong>): brings control back to your machine as described above</li>
+<li>Transfer File to Target: Appears if a file is on the clipboard.<!-- -->
+<ul>
+<li>Although this alternate method of completing a file transfer is always available, it is only necessary for transferring files to Mac targets.</li>
+</ul>
+</li>
+<li>Flip Session (<strong>Windows+Shift+F</strong>): Allows your client to remote control your machine and hear its audio. As the original controller, you can flip the session back by selecting this option a second time.</li>
+<li>Start/stop Voice Conversation: Allows you to toggle the voice chat on or off for your session.<!-- -->
+<ul>
+<li>Note that this option is unavailable in unattended sessions as they do not support voice chat. However, prompted sessions still support this.</li>
+</ul>
+</li>
+<li>Start Remote Accessibility: This option appears when no screen reader is running on the remote computer. This will enable speech on your end, but the client will not need to worry about hearing speech.<!-- -->
+<ul>
+<li>If a screen reader (including Remote Accessibility) is running, this option turns into a force quit for the running screen reader. This is useful when a target&#x27;s screen reader stops responding to the extent you are unable to restart it normally.</li>
+</ul>
+</li>
+<li>Reboot and Reconnect: Allows you to reboot the computer and automatically reconnect the session.<!-- -->
+<ul>
+<li>Note that a Mac target cannot start RIM pre-login due to platform limitations, notably FileVault.</li>
+<li>As such, RIM will reconnect once the user logs in.</li>
+</ul>
+</li>
+<li>Send Control+Alt+Delete: Sends this keystroke to the remote machine.<!-- -->
+<ul>
+<li>An equivalent for this option is not yet implemented for Mac targets.</li>
+</ul>
+</li>
+<li>Request Unattended or Prompted Access: Allows you to send a request for unattended access to the client computer. This is useful if you are a sysadmin and need to perform routine maintenance, or even for something as simple as controlling your home machine while on the go.</li>
+<li>Lock the Target Machine: Locks the target machine.</li>
+<li>View Connection Details: Provides a detailed lowdown on your connection, as well as the target machine. Information includes:<!-- -->
+<ul>
+<li>Connection statistics</li>
+<li>Information about the computer, including operating system version, available RAM, etc.</li>
+<li>Running processes (Windows targets)</li>
+<li>Installed packages (Windows targets)</li>
+</ul>
+</li>
+<li>Disconnect Session (<strong>Windows+Shift+D</strong>): Terminates the session.<!-- -->
+<ul>
+<li>Remember that this option is available to both sides of the session.</li>
+</ul>
+</li>
+</ul></div>
+<div hidden=""><ul>
+<li>Update RIM on Target: Forces an update of RIM on the target computer<!-- -->
+<ul>
+<li>This option shows if the target&#x27;s machine is running an older version of RIM.</li>
+</ul>
+</li>
+<li>Minimize Session (<strong>Option+Shift+M</strong>): brings control back to your machine as described above</li>
+<li>Transfer File to Target: Appears if a file is on the clipboard.<!-- -->
+<ul>
+<li>Although this alternate method of completing a file transfer is always available, it is only necessary for transferring files to Mac targets.</li>
+</ul>
+</li>
+<li>Flip Session (<strong>Option+Shift+F</strong>): Allows your client to remote control your machine and hear its audio. As the original controller, you can flip the session back by selecting this option a second time.</li>
+<li>Start/stop Voice Conversation: Allows you to toggle the voice chat on or off for your session.<!-- -->
+<ul>
+<li>Note that this option is unavailable in unattended sessions as they do not support voice chat. However, prompted sessions still support this.</li>
+</ul>
+</li>
+<li>Start Remote Accessibility: This option appears when no screen reader is running on the remote computer. This will enable speech on your end, but the client will not need to worry about hearing speech.<!-- -->
+<ul>
+<li>If a screen reader (including Remote Accessibility) is running, this option turns into a force quit for the running screen reader. This is useful when a target&#x27;s screen reader stops responding to the extent you are unable to restart it normally.</li>
+</ul>
+</li>
+<li>Reboot and Reconnect: Allows you to reboot the computer and automatically reconnect the session.<!-- -->
+<ul>
+<li>Note that a Mac target cannot start RIM pre-login due to platform limitations, notably FileVault.</li>
+<li>As such, RIM will reconnect once the user logs in.</li>
+</ul>
+</li>
+<li>Send Control+Alt+Delete: Sends this keystroke to the remote machine.<!-- -->
+<ul>
+<li>An equivalent for this option is not yet implemented for Mac targets.</li>
+</ul>
+</li>
+<li>Request Unattended or Prompted Access: Allows you to send a request for unattended access to the client computer. This is useful if you are a sysadmin and need to perform routine maintenance, or even for something as simple as controlling your home machine while on the go.</li>
+<li>Lock the Target Machine: Locks the target machine.</li>
+<li>View Connection Details: Provides a detailed lowdown on your connection, as well as the target machine. Information includes:<!-- -->
+<ul>
+<li>Connection statistics</li>
+<li>Information about the computer, including operating system version, available RAM, etc.</li>
+<li>Running processes (Windows targets)</li>
+<li>Installed packages (Windows targets)</li>
+</ul>
+</li>
+<li>Disconnect Session (<strong>Option+Shift+D</strong>): Terminates the session.<!-- -->
+<ul>
+<li>Remember that this option is available to both sides of the session.</li>
+</ul>
+</li>
+</ul></div>
+<h2>File Transfers</h2>
+<p>RIM provides a simple avenue for transferring files, irrespective of the platform used.</p>
+<ol>
+<li>Bring up the RIM menu, and click on &quot;Minimize Session.&quot; Control will be directed back to your computer.</li>
+<li>Select the file(s) and/or folder(s) you want to transfer using your file manager.</li>
+<li>Copy the selected contents to the clipboard in the usual way. You will receive a notification that a file is ready to be transferred. You have two options.</li>
+<li><strong>If the target is a Mac:</strong>
+<ul>
+<li>Activate the RIM session menu and click on the &quot;Transfer File to Target&quot; option.</li>
+<li>Upon completion of the transfer, the target Mac will generate a temporary directory containing the transferred contents. These should then be copied and pasted to their intended directories.</li>
+</ul>
+</li>
+<li><strong>If the target is a Windows machine:</strong>
+<ul>
+<li>Switch back to the remote session and locate the folder on the target machine where you wish to paste the content.</li>
+<li>Last but not least, paste as you normally would.</li>
+</ul>
+</li>
+</ol>
+<p>Note that the transfer time will depend entirely on the size of the content being sent as well as your network speed.</p>
+<h2>Remote Accessibility Module</h2>
+<p>Whether you&#x27;re assisting a user who doesn&#x27;t use a screen reader, or you&#x27;re diagnosing an issue with a malfunctioning screen reader, RIM is fully prepared to come to your aid.</p>
+<div><p>The remote accessibility module consists of two components:</p><ul>
+<li>An addon for the NVDA screen reader that enables the screen reader to receive output from the remote computer</li>
+<li>A self-contained accessibility module initiated on the target computer at the request of the controller. The advantage to this approach is that the end user does not hear speech on their computer while you&#x27;re controlling it. Instead, the Remote Accessibility Module pipes the speech output through to the running copy of NVDA on the controller side. This way, you can accessibly assist an end user without them having to install or even download a screen reader.</li>
+</ul><h3>Setup Procedure</h3><p>For first-time initialization of the accessibility module, here is what you will need to do:</p><ol>
+<li>Connect to a computer that does not have a screen reader running.</li>
+<li>If NVDA is currently running, you will be asked to install an addon that will allow your copy of NVDA to communicate with the remote computer during the session. Accept the installation prompts, and wait for NVDA to restart.</li>
+<li>By now, the remote accessibility module will be fully initialized, and you will hear speech output as you control the remote computer.</li>
+</ol><p>From this point forward, if you are running a screen reader on the controling computer, the remote accessibility module will automatically start during remote sessions in which the remote computer does not have a screen reader running. Should you be running a screen reader other than NVDA, RIM will disengage that screen reader and then switch you over to NVDA. If you need to stop the remote accessibility module on the remote machine in order to start another screen reader, simply access the &quot;Stop Remote Accessibility&quot; option off the RIM menu.</p></div>
+<div hidden=""><p>The remote accessibility module is a special configuration initiated on the target Mac at the request of a Windows or Mac controller. The advantage to this approach is that the end user does not hear speech on their computer while you&#x27;re controlling it. Instead, the Remote Accessibility Module pipes the speech output through to the speech system on the controller side. This way, you can accessibly assist an end user without them having to enable a screen reader. If you are running VoiceOver on the controling Mac, the remote accessibility module will automatically start during remote sessions in which the remote computer does not have a screen reader running.</p></div>
+<h2>Rebooting and Reconnecting</h2>
+<p>Whether you&#x27;re installing system updates or working your way out of a system hang, RIM has got you covered during the reboot process. Selecting the &quot;Reboot and Reconnect&quot; option off the RIM menu will allow you to either perform a graceful reboot or an emergency reboot, depending on what state the computer is in. While the computer is rebooting, RIM will inform you that reconnection attempts are being made.
+Note that if the computer is rebooted by a software installation or manually rebooted in the usual way, you will be asked if you wish to reconnect the session. Of further note is that in either case, Mac targets will only reconnect once the user logs in. This is due to the fact that RIM cannot start automatically on the login screen due to platform limitations, most notably FileVault disk encryption.</p>
+<h2>Unattended or Prompted Access</h2>
+<p>RIM allows you, as the controller, to configure machines for unattended or prompted access. This allows you to provide remote assistance without the user having to launch RIM, enter a keyword, or even be near the computer. This is useful if you are a sysadmin performing routine maintenance on computers in your workgroup, or for clients you provide support to on the regular. You may also want to allow unattended access for your home computer should you need to access it from someplace else.
+There are a few ways to configure machines for unattended access.</p>
+<h3>During an Interactive Session</h3>
+<ol>
+<li>Bring up the RIM menu.</li>
+<li>Select &quot;Request Unattended or Prompted Access.&quot;</li>
+<li>You will be asked what kind of connection you want to configure. Your options are:<!-- -->
+<ol>
+<li>Unattended: Allows sessions to be initiated without any intervention whatsoever from the end user.</li>
+<li>Prompted: This configuration presents the user with a prompt informing them that you are conecting to their machine. They will need to press Option+Shift+Y on Mac OS, or Windows+Shift+Y on Windows, should they wish to accept the connection.</li>
+</ol>
+</li>
+<li>You will be asked to give this machine a name. Enter a personal name for the machine, or if applicable, the machine ID as it appears in your workgroup.</li>
+<li>Press enter.</li>
+<li>On the client machine, a dialogue pops up asking the user if they&#x27;re fine with their computer being set up for the access you requested. If they answer yes, then you will get a prompt informing you that the access has been approved.</li>
+</ol>
+<h4>Note for Personal Unattended Account Holders</h4>
+<p>If you have used all the machine slots allocated to your account, RIM will not perform the request. In this situation, you have two options, both possible via the RIM Dashboard:</p>
+<ol>
+<li>Deregister one of your machines, freeing up a slot.</li>
+<li>Upgrade your subscription with more slots.</li>
+</ol>
+<h3>Registering a Machine to your RIM account</h3>
+<p>Should you wish to register one of your own machines for unattended access, you can do so without having to start an interactive session with the machine.</p>
+<ol>
+<li>Start RIM in Receive Help Mode.</li>
+<li>Click on the &quot;Add this machine to your RIM account&quot; button.</li>
+<li>Enter your email, then click next.</li>
+<li>Wait for the two-step login code to arrive, enter it, then you should be logged in.</li>
+<li>You will be asked what type of access you would like configured for this machine. Your options are:<!-- -->
+<ol>
+<li>Unattended: Allows sessions to be initiated without any intervention whatsoever from the end user.</li>
+<li>Prompted: This configuration presents the user with a prompt informing them that you are conecting to their machine.</li>
+</ol>
+</li>
+<li>Give the machine a name, then activate the &quot;Add Machine&quot; button.</li>
+<li>The machine will be registered to your account, which will allow any controller machines logged into your RIM account to connect to this machine.</li>
+</ol>
+<h4>Note for Personal Unattended Account Holders</h4>
+<p>If you have used all the machine slots allocated to your account, RIM will not perform the request. In this situation, you have two options, both possible via the RIM Dashboard:</p>
+<ol>
+<li>Deregister one of your machines, freeing up a slot.</li>
+<li>Upgrade your subscription with more slots.</li>
+</ol>
+<h3>Getting Connected</h3>
+<p>Now that we&#x27;ve registered the machine for unattended access, here is how we will start a session.</p>
+<ol>
+<li>Start RIM in controller mode.</li>
+<li>Rather than entering a keyword, locate and activate the&quot;Choose a machine&quot; button.</li>
+<li>When you click this, a list of machines will appear. Choose the one you want, then hit enter. You may also use the search bar to narrow the list down to a specific machine.</li>
+</ol>
+<p>If the target machine is configured for prompted access, the end user will get a prompt. Once they answer yes, you&#x27;ll be connected. If the session is unattended, you will immediately be connected and dropped into the remote control zone.</p>
+<p>Please note: Voice conversations are not supported during fully unattended sessions, however they are supported for prompted sessions.</p>
+<h3>Creating a Shortcut for an Unattended Session</h3>
+<p>For extra convenience, you can create desktop shortcuts that allow you to automatically launch unattended sessions. In order to do this:</p>
+<ol>
+<li>Access the list of unattended computers, and select the one you want to create a shortcut for.</li>
+<li>Click on the &quot;Create Shortcut&quot; button.</li>
+<li>A shortcut will be automatically added to your desktop.</li>
+</ol>
+<p>Now, when you activate this shortcut, you will either automatically land in the remote session, or send a prompt to the user&#x27;s machine that they can accept.</p>
+<div><h4>More Ways to use Unattended Session Shortcuts</h4><p>Unattended session shortcuts, like any other shortcuts, can have global hotkeys associated with them. This can be extremely useful if you are a maintenance tech managing multiple computers in a workgroup. For example, if your workgroup consists of 6 computers that you perform routine maintenance on, you could configure Alt+Control+1 through 6 as hotkeys for each respective machine. This ought to significantly speed up your workflow.
+In addition, you can call up an unattended session via the run box if you copy the shortcut into your user directory. Once you&#x27;ve copied the shortcut, you may start an unattended session by typing your-session-name.url in the run box.</p></div>
+<h3>Revoking Unattended Access</h3>
+<p>If you no longer want your machine to be controlled unattended, you can revoke the controller&#x27;s access. You do not need to be in a session in order to do this.</p>
+<div><ol>
+<li>Access the Remote Incident Manager icon in your system tray.<!-- -->
+<ol>
+<li>If using the keyboard, press windows+b, then space, then left or right arrow until you find the icon.</li>
+</ol>
+</li>
+<li>Right click this icon, or press the applications or shift+f10 key.</li>
+<li>Select the &quot;Revoke Unattended Access&quot; option.</li>
+<li>You will arrive at a list of computers, select the one you want to revoke.</li>
+<li>You will be asked if you wish to revoke the machine; answer yes.</li>
+</ol></div>
+<div hidden=""><ol>
+<li>Access the Remote Incident Manager icon in your menu extras/status menus.<!-- -->
+<ol>
+<li>If using VoiceOver, press VO+M twice, then locate the Remote Incident Manager menu icon.</li>
+<li>Click this icon, or press VO+Space.</li>
+</ol>
+</li>
+<li>Select the &quot;Revoke Unattended Access&quot; option.</li>
+<li>You will arrive at a list of computers, select the one you want to revoke.</li>
+<li>You will be asked if you wish to revoke the machine; answer yes.</li>
+</ol></div>
+<p>That&#x27;s it! The controller will receive a message stating that this machine is no longer available for unattended access. Should they need unattended access again, they can reinitiate the procedure to request permission for unattended access as described above.</p>
+<div><h2>Key Command Reference</h2><table><thead><tr><th>Action</th><th>Command</th></tr></thead><tbody><tr><td>Access the RIM Menu</td><td>Windows+Shift+Backspace</td></tr><tr><td>Minimize Session</td><td>Windows+Shift+M</td></tr><tr><td>Flip Session</td><td>Windows+Shift+F</td></tr><tr><td>Disconnect Session (Controller or Target)</td><td>Windows+Shift+D</td></tr></tbody></table></div>
+<div hidden=""><table><thead><tr><th>Action</th><th>Command</th></tr></thead><tbody><tr><td>Access the RIM Menu</td><td>Option+Shift+Backspace</td></tr><tr><td>Minimize Session</td><td>Option+Shift+M</td></tr><tr><td>Flip Session</td><td>Option+Shift+F</td></tr><tr><td>Disconnect Session (Controller or Target)</td><td>Option+Shift+D</td></tr></tbody></table></div>console.log(pageProps);</div><footer><a class="path-prev" role="button" href="/en/gettingconnected">Previous Section</a><a class="path-next" role="button" href="/en/dashboard">Next Section</a><div class="platform-switcher"><button type="button" hidden="">Switch to Windows content</button><button type="button">Switch to macOS content</button></div><div class="languageSelector"><label for="langChange">Language:</label><select id="langChange"><option value="en" selected="">English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="sv">Swedish</option><option value="pt">Portuguese</option></select><button>Go</button></div></footer></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/template/workingwithsessions","query":{},"buildId":"cmXcQ_r2TQVpi_9IsN491","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>

@@ -1,0 +1,28 @@
+{
+  "sortedMiddleware": [],
+  "middleware": {},
+  "functions": {
+    "/api/vector-search": {
+      "env": [
+        "OPENAI_KEY",
+        "NEXT_PUBLIC_SUPABASE_URL",
+        "SUPABASE_SERVICE_ROLE_KEY"
+      ],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/vector-search.js"
+      ],
+      "name": "pages/api/vector-search",
+      "page": "/api/vector-search",
+      "matchers": [
+        {
+          "regexp": "^/api/vector\\-search$",
+          "originalSource": "/api/vector-search"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    }
+  },
+  "version": 2
+}

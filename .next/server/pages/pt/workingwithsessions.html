@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Trabalhando em uma sessão - Documentação do Remote Incident Manager</title><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/css/aa3518fd57694e9f.css" as="style"/><link rel="stylesheet" href="/_next/static/css/aa3518fd57694e9f.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-cf1eebb864da6905.js" defer=""></script><script src="/_next/static/chunks/framework-0a897eab13466586.js" defer=""></script><script src="/_next/static/chunks/main-b155a78e95213c41.js" defer=""></script><script src="/_next/static/chunks/pages/_app-124ec654690f191c.js" defer=""></script><script src="/_next/static/chunks/pages/pt/workingwithsessions-b09c58caca13df78.js" defer=""></script><script src="/_next/static/cmXcQ_r2TQVpi_9IsN491/_buildManifest.js" defer=""></script><script src="/_next/static/cmXcQ_r2TQVpi_9IsN491/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div><h2>Remote Incident Manager (RIM)</h2><div class="platform-switcher"><button type="button" hidden="">Switch to Windows content</button><button type="button">Switch to macOS content</button></div></div><div class="container-fluid"><div class="sidebar"><div class="navbar navbar-default" role="navigation"><div class="row flex-nowrap"><div class="col-auto px-0"><div id="sidebar" class="collapse show collapse-horizontal" aria-expanded="true"><ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navList"><li class="nav-item"><a href="/pt">Bem-vindo</a></li><li class="nav-item"><a href="/pt/systemspecs">Requisitos do sistema</a></li><li class="nav-item"><a href="/pt/installation">Instalação</a></li><li class="nav-item"><a href="/pt/gettingconnected">Como se conectar</a></li><li class="nav-item"><a href="/pt/workingwithsessions">Trabalhando em uma sessão</a></li><li class="nav-item"><a href="/pt/dashboard">O painel de controle do Rim Management</a></li><li class="nav-item"><a href="/pt/faq">Perguntas frequentes</a></li><li class="nav-item"><a href="/pt/plans">Planos e compras</a></li><li class="nav-item"><a href="/pt/changelog">Registro de alterações</a></li></ul></div></div></div></div><div class="search"><button class="text-base flex gap-2 items-center px-4 py-2 z-50 relative   text-slate-500 dark:text-slate-400  hover:text-slate-700 dark:hover:text-slate-300   transition-colors   rounded-md   border border-slate-200 dark:border-slate-500 hover:border-slate-300 dark:hover:border-slate-500   min-w-[300px] "><svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><span class="border border-l h-5"></span><span class="inline-block ml-4">Search...</span><kbd class="absolute right-3 top-2.5   pointer-events-none inline-flex h-5 select-none items-center gap-1   rounded border border-slate-100 bg-slate-100 px-1.5   font-mono text-[10px] font-medium   text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400   opacity-100 "><span class="text-xs">⌘</span>K</kbd> </button></div></div><main class="col ps-md-2 pt-2"><div class="page-header pt-3"><h2>Coisas que você deve saber antes de começar</h2>
+<p>Algumas coisas acontecerão imediatamente após o estabelecimento da conexão.</p>
+<div><ul>
+<li>A janela de controle remoto da sessão será exibida.</li>
+<li>Você será informado sobre o status do leitor de tela em execução, ou da falta dele, no computador do cliente.</li>
+<li>Se o cliente estiver executando um leitor de tela, uma notificação de brinde informando ao usuário que a sessão remota foi iniciada fornecerá uma confirmação instantânea de que o áudio do sistema do usuário está funcionando.</li>
+<li>Um alvo Mac exibirá o assistente de configuração de teclado se esta for a primeira vez que um controlador se conecta a ele.<!-- -->
+<ul>
+<li>Isso é para o teclado virtual Karabiner, que ouve os comandos de teclado enviados a ele por um controlador.</li>
+<li>Dessa forma, você deverá orientar o computador de destino pelo assistente de configuração, pois ele estará ouvindo os pressionamentos do teclado remoto no processo de identificação, e não o próprio teclado do Mac.</li>
+</ul>
+</li>
+<li>Por último, mas não menos importante, todas as entradas de teclado e mouse serão imediatamente direcionadas para o computador de destino. Para direcionar o controle de volta para o seu computador, siga um destes procedimentos:<!-- -->
+<ul>
+<li>Pressione Windows+Shift+Backspace.</li>
+<li>Clique com o botão direito do mouse na barra de título da janela do RIM.</li>
+<li>Clique com o botão esquerdo do mouse no ícone do RIM.</li>
+</ul>
+</li>
+</ul></div>
+<div hidden=""><ul>
+<li>A janela de controle remoto da sessão será exibida.</li>
+<li>Você será informado sobre o status do leitor de tela em execução, ou a falta dele, na máquina do cliente.</li>
+<li>Se o cliente estiver executando um leitor de tela, uma notificação de brinde informando ao usuário que a sessão remota foi iniciada fornecerá uma confirmação instantânea de que o áudio do sistema do usuário está funcionando.</li>
+<li>Um alvo Mac exibirá o assistente de configuração de teclado se esta for a primeira vez que um controlador se conecta a ele.<!-- -->
+<ul>
+<li>Isso é para o teclado virtual Karabiner, que ouve os comandos de teclado enviados a ele por um controlador.</li>
+<li>Dessa forma, você deverá orientar o computador de destino pelo assistente de configuração, pois ele estará ouvindo os pressionamentos do teclado remoto no processo de identificação, e não o próprio teclado do Mac.</li>
+</ul>
+</li>
+<li>Por último, mas não menos importante, todas as entradas de teclado e mouse serão imediatamente direcionadas para o computador de destino. Para direcionar o controle de volta para o seu computador, siga um destes procedimentos:<!-- -->
+<ul>
+<li>Pressione Option+Shift+Backspace.</li>
+<li>Clique no ícone grande do RIM no canto superior esquerdo da janela da sessão.</li>
+</ul>
+</li>
+</ul></div>
+<h2>Zona de controle remoto</h2>
+<p>Neste ponto, você está pronto para executar qualquer tarefa que precise ser feita no lado do cliente. Se precisar voltar a controlar sua própria máquina, abra o menu RIM e selecione a opção &quot;Minimizar sessão&quot;. Você será levado de volta à sua máquina até voltar para a janela da sessão ou pressionar Windows+Shift+Backspace novamente. Ao voltar para a janela da sessão, a entrada do teclado e do mouse será novamente direcionada para o computador cliente.</p>
+<p>Quando terminar, o controlador ou o alvo poderá acessar o menu RIM e escolher a opção &quot;Disconnect Session&quot; (Desconectar sessão). Quando a sessão terminar, o computador de destino receberá uma notificação de brinde informando-o disso.</p>
+<h2>O menu RIM</h2>
+<p>Conforme mencionado anteriormente, o acesso ao menu RIM o direciona de volta ao seu computador. Há várias opções nesse menu. Elas incluem:</p>
+<div><ul>
+<li>Update RIM on Target (Atualizar RIM no destino): Força uma atualização do RIM no computador de destino<!-- -->
+<ul>
+<li>Essa opção mostra se o computador de destino está executando uma versão mais antiga do RIM.</li>
+</ul>
+</li>
+<li>Minimizar sessão (<strong>Windows+Shift+M</strong>): traz o controle de volta ao seu computador, conforme descrito acima</li>
+<li>Transferir arquivo para o destino: Aparece se um arquivo estiver na área de transferência.<!-- -->
+<ul>
+<li>Embora esse método alternativo de concluir uma transferência de arquivo esteja sempre disponível, ele só é necessário para transferir arquivos para destinos Mac.</li>
+</ul>
+</li>
+<li>Flip Session (<strong>Windows+Shift+F</strong>): Permite que o seu cliente controle remotamente o seu computador e ouça o áudio dele. Como controlador original, você pode inverter a sessão selecionando essa opção uma segunda vez.</li>
+<li>Iniciar/parar conversa por voz: Permite que você ative ou desative o bate-papo por voz em sua sessão.<!-- -->
+<ul>
+<li>Observe que essa opção não está disponível em sessões sem supervisão, pois elas não são compatíveis com o bate-papo por voz. No entanto, as sessões solicitadas ainda suportam essa opção.</li>
+</ul>
+</li>
+<li>Iniciar acessibilidade remota: Essa opção aparece quando nenhum leitor de tela está em execução no computador remoto. Isso habilitará a fala do seu lado, mas o cliente não precisará se preocupar em ouvir a fala.<!-- -->
+<ul>
+<li>Se um leitor de tela (incluindo a Acessibilidade Remota) estiver em execução, essa opção se transformará em um encerramento forçado do leitor de tela em execução. Isso é útil quando o leitor de tela de um alvo para de responder a ponto de você não conseguir reiniciá-lo normalmente.</li>
+</ul>
+</li>
+<li>Reiniciar e reconectar: Permite que você reinicie o computador e reconecte automaticamente a sessão.<!-- -->
+<ul>
+<li>Observe que um alvo Mac não pode iniciar o RIM antes do login devido a limitações da plataforma, principalmente o FileVault.</li>
+<li>Dessa forma, o RIM se reconectará assim que o usuário fizer login.</li>
+</ul>
+</li>
+<li>Enviar Control+Alt+Delete: Envia esse pressionamento de tecla para a máquina remota.<!-- -->
+<ul>
+<li>Um equivalente a essa opção ainda não foi implementado para alvos Mac.</li>
+</ul>
+</li>
+<li>Request Unattended or Prompted Access (Solicitar acesso autônomo ou solicitado): Permite que você envie uma solicitação de acesso autônomo ao computador cliente. Isso é útil se você for um administrador de sistema e precisar realizar manutenção de rotina ou até mesmo para algo tão simples como controlar sua máquina doméstica enquanto estiver em trânsito.</li>
+<li>Lock the Target Machine (Bloquear a máquina de destino): Bloqueia a máquina de destino.</li>
+<li>View Connection Details (Exibir detalhes da conexão): Fornece informações detalhadas sobre sua conexão, bem como sobre a máquina de destino. As informações incluem:<!-- -->
+<ul>
+<li>Estatísticas da conexão</li>
+<li>Informações sobre o computador, incluindo a versão do sistema operacional, a RAM disponível, etc.</li>
+<li>Processos em execução (alvos Windows)</li>
+<li>Pacotes instalados (alvos Windows)</li>
+</ul>
+</li>
+<li>Desconectar sessão (<strong>Windows+Shift+D</strong>): Encerra a sessão.<!-- -->
+<ul>
+<li>Lembre-se de que essa opção está disponível para ambos os lados da sessão.</li>
+</ul>
+</li>
+</ul></div>
+<div hidden=""><ul>
+<li>Update RIM on Target (Atualizar RIM no destino): Força uma atualização do RIM no computador de destino<!-- -->
+<ul>
+<li>Essa opção mostra se o computador de destino está executando uma versão mais antiga do RIM.</li>
+</ul>
+</li>
+<li>Minimizar sessão (<strong>Opção+Shift+M</strong>): traz o controle de volta à sua máquina, conforme descrito acima</li>
+<li>Transferir arquivo para o destino: Aparece se houver um arquivo na área de transferência.<!-- -->
+<ul>
+<li>Embora esse método alternativo de concluir uma transferência de arquivo esteja sempre disponível, ele só é necessário para a transferência de arquivos para destinos Mac.</li>
+</ul>
+</li>
+<li>Inverter sessão (<strong>Opção+Shift+F</strong>): Permite que o cliente controle remotamente o computador e ouça o áudio. Como controlador original, você pode inverter a sessão selecionando essa opção uma segunda vez.</li>
+<li>Iniciar/parar conversa por voz: Permite que você ative ou desative o bate-papo por voz em sua sessão.<!-- -->
+<ul>
+<li>Observe que essa opção não está disponível em sessões sem supervisão, pois elas não são compatíveis com o bate-papo por voz. No entanto, as sessões solicitadas ainda suportam essa opção.</li>
+</ul>
+</li>
+<li>Iniciar acessibilidade remota: Essa opção aparece quando nenhum leitor de tela está em execução no computador remoto. Isso habilitará a fala do seu lado, mas o cliente não precisará se preocupar em ouvir a fala.<!-- -->
+<ul>
+<li>Se um leitor de tela (incluindo a Acessibilidade Remota) estiver em execução, essa opção se transformará em um encerramento forçado do leitor de tela em execução. Isso é útil quando o leitor de tela de um alvo para de responder a ponto de você não conseguir reiniciá-lo normalmente.</li>
+</ul>
+</li>
+<li>Reiniciar e reconectar: Permite que você reinicie o computador e reconecte automaticamente a sessão.<!-- -->
+<ul>
+<li>Observe que um alvo Mac não pode iniciar o RIM antes do login devido a limitações da plataforma, principalmente o FileVault.</li>
+<li>Dessa forma, o RIM se reconectará assim que o usuário fizer login.</li>
+</ul>
+</li>
+<li>Enviar Control+Alt+Delete: Envia esse pressionamento de tecla para a máquina remota.<!-- -->
+<ul>
+<li>Um equivalente a essa opção ainda não foi implementado para alvos Mac.</li>
+</ul>
+</li>
+<li>Request Unattended or Prompted Access (Solicitar acesso autônomo ou solicitado): Permite que você envie uma solicitação de acesso autônomo ao computador cliente. Isso é útil se você for um administrador de sistema e precisar realizar manutenção de rotina ou até mesmo para algo tão simples como controlar sua máquina doméstica enquanto estiver em trânsito.</li>
+<li>Lock the Target Machine (Bloquear a máquina de destino): Bloqueia a máquina de destino.</li>
+<li>View Connection Details (Exibir detalhes da conexão): Fornece informações detalhadas sobre sua conexão, bem como sobre a máquina de destino. As informações incluem:<!-- -->
+<ul>
+<li>Estatísticas da conexão</li>
+<li>Informações sobre o computador, incluindo a versão do sistema operacional, a RAM disponível, etc.</li>
+<li>Processos em execução (alvos Windows)</li>
+<li>Pacotes instalados (alvos Windows)</li>
+</ul>
+</li>
+<li>Desconectar sessão (<strong>Opção+Shift+D</strong>): Encerra a sessão.<!-- -->
+<ul>
+<li>Lembre-se de que essa opção está disponível para ambos os lados da sessão.</li>
+</ul>
+</li>
+</ul></div>
+<h2>Transferências de arquivos</h2>
+<p>O RIM oferece um caminho simples para a transferência de arquivos, independentemente da plataforma usada.</p>
+<ol>
+<li>Abra o menu do RIM e clique em &quot;Minimizar sessão&quot; O controle será direcionado de volta ao seu computador.</li>
+<li>Selecione o(s) arquivo(s) e/ou pasta(s) que deseja transferir usando seu gerenciador de arquivos.</li>
+<li>Copie o conteúdo selecionado para a área de transferência da maneira habitual. Você receberá uma notificação de que um arquivo está pronto para ser transferido. Você tem duas opções.</li>
+<li><strong>Se o destino for um Mac:</strong>
+<ul>
+<li>Ative o menu da sessão do RIM e clique na opção &quot;Transfer File to Target&quot; (Transferir arquivo para o destino).</li>
+<li>Após a conclusão da transferência, o Mac de destino gerará um diretório temporário contendo o conteúdo transferido. Em seguida, eles devem ser copiados e colados nos diretórios pretendidos.</li>
+</ul>
+</li>
+<li>**Se o destino for uma máquina Windows<!-- -->
+<ul>
+<li>Volte para a sessão remota e localize a pasta no computador de destino onde você deseja colar o conteúdo.</li>
+<li>Por último, mas não menos importante, cole como faria normalmente.</li>
+</ul>
+</li>
+</ol>
+<p>Observe que o tempo de transferência dependerá inteiramente do tamanho do conteúdo que está sendo enviado, bem como da velocidade da rede.</p>
+<h2>Módulo de acessibilidade remota</h2>
+<p>Não importa se você está ajudando um usuário que não usa um leitor de tela ou se está diagnosticando um problema com um leitor de tela com defeito, a RIM está totalmente preparada para ajudá-lo.</p>
+<div><p>O módulo de acessibilidade remota consiste em dois componentes:</p><ul>
+<li>Um complemento para o leitor de tela NVDA que permite que o leitor de tela receba saída do computador remoto</li>
+<li>Um módulo de acessibilidade autônomo iniciado no computador de destino por solicitação do controlador. A vantagem dessa abordagem é que o usuário final não ouve a fala no computador enquanto você o controla. Em vez disso, o módulo de acessibilidade remota canaliza a saída de fala para a cópia em execução do NVDA no lado do controlador. Dessa forma, você pode ajudar um usuário final de forma acessível sem que ele precise instalar ou mesmo fazer download de um leitor de tela.</li>
+</ul><h3>Procedimento de configuração</h3><p>Para a primeira inicialização do módulo de acessibilidade, veja o que você precisará fazer:</p><ol>
+<li>Conecte-se a um computador que não tenha um leitor de tela em execução.</li>
+<li>Se o NVDA estiver em execução no momento, você será solicitado a instalar um complemento que permitirá que a sua cópia do NVDA se comunique com o computador remoto durante a sessão. Aceite os avisos de instalação e aguarde a reinicialização do NVDA.</li>
+<li>Nesse momento, o módulo de acessibilidade remota estará totalmente inicializado e você ouvirá a saída de voz ao controlar o computador remoto.</li>
+</ol><p>Deste ponto em diante, se você estiver executando um leitor de tela no computador de controle, o módulo de acessibilidade remota será iniciado automaticamente durante as sessões remotas em que o computador remoto não tiver um leitor de tela em execução. Se você estiver executando um leitor de tela que não seja o NVDA, a RIM desativará esse leitor de tela e passará a usar o NVDA. Se precisar interromper o módulo de acessibilidade remota na máquina remota para iniciar outro leitor de tela, basta acessar a opção &quot;Stop Remote Accessibility&quot; (Interromper acessibilidade remota) no menu RIM.</p></div>
+<div hidden=""><p>O módulo de acessibilidade remota é uma configuração especial iniciada no Mac de destino a pedido de um controlador do Windows ou do Mac. A vantagem dessa abordagem é que o usuário final não ouve a fala no computador enquanto você o controla. Em vez disso, o Módulo de Acessibilidade Remota canaliza a saída de fala para o sistema de fala no lado do controlador. Dessa forma, você pode ajudar um usuário final de forma acessível sem que ele precise ativar um leitor de tela. Se você estiver executando o VoiceOver no Mac controlador, o módulo de acessibilidade remota será iniciado automaticamente durante as sessões remotas em que o computador remoto não tiver um leitor de tela em execução.</p></div>
+<h2>Reinicialização e reconexão</h2>
+<p>Não importa se você está instalando atualizações do sistema ou trabalhando para sair de um travamento do sistema, a RIM tem tudo o que você precisa durante o processo de reinicialização. Ao selecionar a opção &quot;Reboot and Reconnect&quot; (Reiniciar e reconectar) no menu do RIM, você poderá executar uma reinicialização normal ou uma reinicialização de emergência, dependendo do estado em que o computador se encontra. Enquanto o computador estiver sendo reinicializado, o RIM informará que estão sendo feitas tentativas de reconexão.
+Observe que, se o computador for reinicializado por uma instalação de software ou reinicializado manualmente da maneira usual, você será perguntado se deseja reconectar a sessão. É importante observar também que, em ambos os casos, os alvos do Mac só se reconectarão quando o usuário fizer login. Isso se deve ao fato de que o RIM não pode ser iniciado automaticamente na tela de login devido a limitações da plataforma, principalmente a criptografia de disco FileVault.</p>
+<h2>Acesso autônomo ou solicitado</h2>
+<p>O RIM permite que você, como controlador, configure máquinas para acesso não assistido ou solicitado. Isso permite que você forneça assistência remota sem que o usuário tenha que iniciar o RIM, digitar uma palavra-chave ou mesmo estar perto do computador. Isso é útil se você for um administrador de sistemas que realiza manutenção de rotina em computadores do seu grupo de trabalho ou para clientes aos quais você presta suporte regularmente. Talvez você também queira permitir o acesso sem supervisão ao seu computador doméstico, caso precise acessá-lo de outro lugar.
+Há algumas maneiras de configurar máquinas para acesso autônomo.</p>
+<h3>Durante uma sessão interativa</h3>
+<ol>
+<li>Abra o menu RIM.</li>
+<li>Selecione &quot;Request Unattended or Prompted Access&quot; (Solicitar acesso autônomo ou solicitado)</li>
+<li>Você será questionado sobre o tipo de conexão que deseja configurar. Suas opções são:<!-- -->
+<ol>
+<li>Unattended (sem supervisão): Permite que as sessões sejam iniciadas sem nenhuma intervenção do usuário final.</li>
+<li>Prompted (Solicitado): Essa configuração apresenta ao usuário um prompt informando-o de que você está se conectando ao computador dele. Ele precisará pressionar Option+Shift+Y no macOS ou Windows+Shift+Y no Windows, caso deseje aceitar a conexão.</li>
+</ol>
+</li>
+<li>Você será solicitado a dar um nome a essa máquina. Digite um nome pessoal para a máquina ou, se aplicável, a ID da máquina como ela aparece em seu grupo de trabalho.</li>
+<li>Pressione Enter.</li>
+<li>No computador cliente, será exibida uma caixa de diálogo perguntando ao usuário se ele concorda que o computador seja configurado para o acesso solicitado. Se a resposta for afirmativa, você receberá um aviso informando que o acesso foi aprovado.</li>
+</ol>
+<h4>Observação para titulares de contas pessoais desacompanhadas</h4>
+<p>Se você tiver usado todos os slots de máquina alocados à sua conta, a RIM não executará a solicitação. Nessa situação, você tem duas opções, ambas possíveis por meio do RIM Dashboard:</p>
+<ol>
+<li>Cancelar o registro de uma de suas máquinas, liberando um slot.</li>
+<li>Fazer upgrade de sua assinatura com mais slots.</li>
+</ol>
+<h3>Registrando uma máquina na sua conta RIM</h3>
+<p>Se desejar registrar uma de suas próprias máquinas para acesso sem supervisão, você poderá fazê-lo sem precisar iniciar uma sessão interativa com a máquina.</p>
+<ol>
+<li>Inicie o RIM no modo de recepção de ajuda.</li>
+<li>Clique no botão &quot;Add this machine to your RIM account&quot; (Adicionar esta máquina à sua conta RIM).</li>
+<li>Digite seu e-mail e clique em next (próximo).</li>
+<li>Aguarde a chegada do código de login em duas etapas, digite-o e, em seguida, você deverá estar conectado.</li>
+<li>Você será questionado sobre o tipo de acesso que deseja configurar para essa máquina. Suas opções são:<!-- -->
+<ol>
+<li>Sem supervisão: Permite que as sessões sejam iniciadas sem nenhuma intervenção do usuário final.</li>
+<li>Prompted (Solicitado): Essa configuração apresenta ao usuário um prompt informando-o de que você está se conectando ao computador dele.</li>
+</ol>
+</li>
+<li>Dê um nome à máquina e ative o botão &quot;Add Machine&quot; (Adicionar máquina).</li>
+<li>A máquina será registrada na sua conta, o que permitirá que qualquer máquina controladora conectada à sua conta RIM se conecte a essa máquina.</li>
+</ol>
+<h4>Observação para titulares de contas pessoais autônomas</h4>
+<p>Se você tiver usado todos os slots de máquina alocados à sua conta, a RIM não executará a solicitação. Nessa situação, você tem duas opções, ambas possíveis por meio do RIM Dashboard:</p>
+<ol>
+<li>Cancelar o registro de uma de suas máquinas, liberando um slot.</li>
+<li>Fazer upgrade de sua assinatura com mais slots.</li>
+</ol>
+<h3>Como se conectar</h3>
+<p>Agora que registramos a máquina para acesso sem supervisão, veja como iniciaremos uma sessão.</p>
+<ol>
+<li>Inicie o RIM no modo de controle.</li>
+<li>Em vez de digitar uma palavra-chave, localize e ative o botão &quot;Choose a machine&quot; (Escolha uma máquina).</li>
+<li>Quando você clicar nesse botão, será exibida uma lista de máquinas. Escolha a que você deseja e pressione Enter. Você também pode usar a barra de pesquisa para restringir a lista a uma máquina específica.</li>
+</ol>
+<p>Se o computador de destino estiver configurado para acesso solicitado, o usuário final receberá um aviso. Quando ele responder sim, você será conectado. Se a sessão estiver sem supervisão, você será imediatamente conectado e colocado na zona de controle remoto.</p>
+<p>Observação: não há suporte para conversas por voz durante sessões totalmente sem supervisão, mas há suporte para sessões solicitadas.</p>
+<h3>Como criar um atalho para uma sessão não assistida</h3>
+<p>Para maior comodidade, você pode criar atalhos na área de trabalho que permitam iniciar automaticamente sessões não assistidas. Para fazer isso:</p>
+<ol>
+<li>Acesse a lista de computadores autônomos e selecione aquele para o qual deseja criar um atalho.</li>
+<li>Clique no botão &quot;Create Shortcut&quot; (Criar atalho).</li>
+<li>Um atalho será adicionado automaticamente à sua área de trabalho.</li>
+</ol>
+<p>Agora, ao ativar esse atalho, você entrará automaticamente na sessão remota ou enviará um aviso ao computador do usuário para que ele aceite.</p>
+<div><h4>Mais maneiras de usar atalhos de sessão autônoma</h4><p>Os atalhos de sessão autônoma, como quaisquer outros atalhos, podem ter teclas de atalho globais associadas a eles. Isso pode ser extremamente útil se você for um técnico de manutenção que gerencia vários computadores em um grupo de trabalho. Por exemplo, se o seu grupo de trabalho for composto por 6 computadores nos quais você realiza manutenção de rotina, você poderá configurar Alt+Control+1 a 6 como teclas de atalho para cada máquina respectiva. Isso deve acelerar significativamente seu fluxo de trabalho.
+Além disso, é possível chamar uma sessão autônoma por meio da caixa de execução se você copiar o atalho para o diretório do usuário. Depois de copiar o atalho, você poderá iniciar uma sessão autônoma digitando your-session-name.url na caixa de execução.</p></div>
+<h3>Revogação do acesso autônomo</h3>
+<p>Se não quiser mais que sua máquina seja controlada sem supervisão, você poderá revogar o acesso do controlador. Não é necessário estar em uma sessão para fazer isso.</p>
+<div><ol>
+<li>Acesse o ícone do Remote Incident Manager na bandeja do sistema.<!-- -->
+<ol>
+<li>Se estiver usando o teclado, pressione windows+b, depois espaço e, em seguida, seta para a esquerda ou para a direita até encontrar o ícone.</li>
+</ol>
+</li>
+<li>Clique com o botão direito do mouse nesse ícone ou pressione a tecla aplicativos ou shift+f10.</li>
+<li>Selecione a opção &quot;Revoke Unattended Access&quot; (Revogar acesso autônomo).</li>
+<li>Você verá uma lista de computadores, selecione o que deseja revogar.</li>
+<li>Será perguntado se você deseja revogar a máquina; responda sim.</li>
+</ol></div>
+<div hidden=""><ol>
+<li>Acesse o ícone do Remote Incident Manager em seus menus extras/status.<!-- -->
+<ol>
+<li>Se estiver usando o VoiceOver, pressione VO+M duas vezes e, em seguida, localize o ícone do menu Remote Incident Manager.</li>
+<li>Clique nesse ícone ou pressione VO+Space.</li>
+</ol>
+</li>
+<li>Selecione a opção &quot;Revoke Unattended Access&quot; (Revogar acesso autônomo).</li>
+<li>Você verá uma lista de computadores, selecione o que deseja revogar.</li>
+<li>Será perguntado se você deseja revogar o computador; responda sim.</li>
+</ol></div>
+<p>Pronto! O controlador receberá uma mensagem informando que essa máquina não está mais disponível para acesso sem supervisão. Se precisar de acesso desacompanhado novamente, ele poderá reiniciar o procedimento para solicitar permissão para acesso desacompanhado, conforme descrito acima.</p>
+<div><h2>Referência do comando principal</h2><table><thead><tr><th>Ação</th><th>Comando</th></tr></thead><tbody><tr><td>Acessar o menu RIM</td><td>Windows+Shift+Backspace</td></tr><tr><td>minimizar sessão</td><td>Windows+Shift+M</td></tr><tr><td>Virar sessão</td><td>Windows+Shift+F</td></tr><tr><td>Desconectar sessão (controlador ou destino)</td><td>Windows+Shift+D</td></tr></tbody></table></div>
+<div hidden=""><table><thead><tr><th>Ação</th><th>Comando</th></tr></thead><tbody><tr><td>Acessar o menu RIM</td><td>Option+Shift+Backspace</td></tr><tr><td>Minimizar sessão</td><td>Option+Shift+M</td></tr><tr><td>Virar a sessão</td><td>Option+Shift+F</td></tr><tr><td>Desconectar sessão (controlador ou destino)</td><td>Option+Shift+D</td></tr></tbody></table></div>console.log(pageProps);</div><footer><a class="path-prev" role="button" href="/pt/gettingconnected">Previous Section</a><a class="path-next" role="button" href="/pt/dashboard">Next Section</a><div class="platform-switcher"><button type="button" hidden="">Switch to Windows content</button><button type="button">Switch to macOS content</button></div><div class="languageSelector"><label for="langChange">Idioma:</label><select id="langChange"><option value="en" selected="">English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="sv">Swedish</option><option value="pt">Portuguese</option></select><button>Go</button></div></footer></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/pt/workingwithsessions","query":{},"buildId":"cmXcQ_r2TQVpi_9IsN491","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>

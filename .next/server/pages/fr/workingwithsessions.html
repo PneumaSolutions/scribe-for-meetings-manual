@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Travailler dans une session - Remote Incident Manager Documentation</title><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/css/aa3518fd57694e9f.css" as="style"/><link rel="stylesheet" href="/_next/static/css/aa3518fd57694e9f.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-cf1eebb864da6905.js" defer=""></script><script src="/_next/static/chunks/framework-0a897eab13466586.js" defer=""></script><script src="/_next/static/chunks/main-b155a78e95213c41.js" defer=""></script><script src="/_next/static/chunks/pages/_app-124ec654690f191c.js" defer=""></script><script src="/_next/static/chunks/pages/fr/workingwithsessions-37f5e18f220cbad8.js" defer=""></script><script src="/_next/static/cmXcQ_r2TQVpi_9IsN491/_buildManifest.js" defer=""></script><script src="/_next/static/cmXcQ_r2TQVpi_9IsN491/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div><h2>Remote Incident Manager (RIM)</h2><div class="platform-switcher"><button type="button" hidden="">Switch to Windows content</button><button type="button">Switch to macOS content</button></div></div><div class="container-fluid"><div class="sidebar"><div class="navbar navbar-default" role="navigation"><div class="row flex-nowrap"><div class="col-auto px-0"><div id="sidebar" class="collapse show collapse-horizontal" aria-expanded="true"><ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navList"><li class="nav-item"><a href="/fr">Bienvenue</a></li><li class="nav-item"><a href="/fr/systemspecs">Configuration requise</a></li><li class="nav-item"><a href="/fr/installation">Installation</a></li><li class="nav-item"><a href="/fr/gettingconnected">Se connecter</a></li><li class="nav-item"><a href="/fr/workingwithsessions">Travailler au sein d&#x27;une session</a></li><li class="nav-item"><a href="/fr/dashboard">Le tableau de bord de la gestion des rives</a></li><li class="nav-item"><a href="/fr/faq">Questions fréquemment posées</a></li><li class="nav-item"><a href="/fr/plans">Plans et achats</a></li><li class="nav-item"><a href="/fr/changelog">Journal des modifications</a></li></ul></div></div></div></div><div class="search"><button class="text-base flex gap-2 items-center px-4 py-2 z-50 relative   text-slate-500 dark:text-slate-400  hover:text-slate-700 dark:hover:text-slate-300   transition-colors   rounded-md   border border-slate-200 dark:border-slate-500 hover:border-slate-300 dark:hover:border-slate-500   min-w-[300px] "><svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><span class="border border-l h-5"></span><span class="inline-block ml-4">Search...</span><kbd class="absolute right-3 top-2.5   pointer-events-none inline-flex h-5 select-none items-center gap-1   rounded border border-slate-100 bg-slate-100 px-1.5   font-mono text-[10px] font-medium   text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400   opacity-100 "><span class="text-xs">⌘</span>K</kbd> </button></div></div><main class="col ps-md-2 pt-2"><div class="page-header pt-3"><h2>Ce qu&#x27;il faut savoir avant de commencer</h2>
+<p>Certaines choses se produisent immédiatement après l&#x27;établissement de la connexion.</p>
+<div><ul>
+<li>La fenêtre de contrôle à distance de la session apparaît.</li>
+<li>Vous serez informé de l&#x27;état du lecteur d&#x27;écran en cours d&#x27;exécution, ou de l&#x27;absence de lecteur d&#x27;écran, sur la machine du client.</li>
+<li>Si le client utilise un lecteur d&#x27;écran, une notification de toast informant l&#x27;utilisateur que la session à distance a commencé confirmera instantanément que le système audio de l&#x27;utilisateur fonctionne.</li>
+<li>Une cible Mac fera apparaître l&#x27;assistant de configuration du clavier si c&#x27;est la première fois qu&#x27;un contrôleur s&#x27;y connecte.<!-- -->
+<ul>
+<li>Il s&#x27;agit du clavier virtuel Karabiner, qui écoute les commandes clavier qui lui sont envoyées par un contrôleur.</li>
+<li>Vous devrez donc guider l&#x27;ordinateur cible à travers l&#x27;assistant d&#x27;installation, car il écoutera les pressions du clavier distant dans le processus d&#x27;identification, et non le clavier du Mac.</li>
+</ul>
+</li>
+<li>Enfin, toutes les saisies du clavier et de la souris seront immédiatement dirigées vers l&#x27;ordinateur cible. Pour rediriger le contrôle vers votre machine, procédez comme suit :<!-- -->
+<ul>
+<li>Appuyez sur les touches Windows+Shift+Backspace.</li>
+<li>Cliquez avec le bouton droit de la souris sur la barre de titre de la fenêtre RIM.</li>
+<li>Cliquez avec le bouton gauche de la souris sur l&#x27;icône du RIM.</li>
+</ul>
+</li>
+</ul></div>
+<div hidden=""><ul>
+<li>La fenêtre de contrôle à distance de la session s&#x27;affiche.</li>
+<li>Vous serez informé de l&#x27;état du lecteur d&#x27;écran en cours d&#x27;exécution, ou de l&#x27;absence de lecteur d&#x27;écran, sur la machine du client.</li>
+<li>Si le client utilise un lecteur d&#x27;écran, une notification de toast informant l&#x27;utilisateur que la session à distance a commencé confirmera instantanément que le système audio de l&#x27;utilisateur fonctionne.</li>
+<li>Une cible Mac fera apparaître l&#x27;assistant de configuration du clavier si c&#x27;est la première fois qu&#x27;un contrôleur s&#x27;y connecte.<!-- -->
+<ul>
+<li>Il s&#x27;agit du clavier virtuel Karabiner, qui écoute les commandes clavier qui lui sont envoyées par un contrôleur.</li>
+<li>Vous devrez donc guider l&#x27;ordinateur cible à travers l&#x27;assistant d&#x27;installation, car il écoutera les pressions du clavier distant dans le processus d&#x27;identification, et non le clavier du Mac.</li>
+</ul>
+</li>
+<li>Enfin, toutes les saisies du clavier et de la souris seront immédiatement dirigées vers l&#x27;ordinateur cible. Pour rediriger le contrôle vers votre machine, procédez comme suit :<!-- -->
+<ul>
+<li>Appuyez sur Option+Shift+Backspace.</li>
+<li>Cliquez sur la grande icône RIM dans le coin supérieur gauche de la fenêtre de session.</li>
+</ul>
+</li>
+</ul></div>
+<h2>Zone de contrôle à distance</h2>
+<p>À ce stade, vous êtes prêt à effectuer toutes les tâches nécessaires du côté client. Si vous souhaitez reprendre le contrôle de votre propre machine, faites apparaître le menu RIM, puis sélectionnez l&#x27;option &quot;Minimiser la session&quot;. Vous serez ramené à votre machine jusqu&#x27;à ce que vous reveniez dans la fenêtre de session ou que vous appuyiez à nouveau sur les touches Windows+Shift+Backspace. Lorsque vous retournez dans la fenêtre de session, les saisies du clavier et de la souris sont à nouveau dirigées vers l&#x27;ordinateur client.</p>
+<p>Lorsque vous avez terminé, le contrôleur ou la machine cible peut aller dans le menu RIM et choisir l&#x27;option &quot;Déconnecter la session&quot;. À la fin de la session, l&#x27;ordinateur cible recevra une notification de toast l&#x27;en informant.</p>
+<h2>Le menu RIM</h2>
+<p>Comme indiqué précédemment, l&#x27;accès au menu RIM vous ramène à votre machine. Ce menu comporte un certain nombre d&#x27;options. Il s&#x27;agit des options suivantes</p>
+<div><ul>
+<li>Mettre à jour le RIM sur la cible : Force une mise à jour du RIM sur l&#x27;ordinateur cible<!-- -->
+<ul>
+<li>Cette option indique si l&#x27;ordinateur cible utilise une ancienne version de RIM.</li>
+</ul>
+</li>
+<li>Minimiser la session (<strong>Windows+Shift+M</strong>) : ramène le contrôle sur votre machine comme décrit ci-dessus</li>
+<li>Transférer le fichier vers la cible : Apparaît si un fichier se trouve dans le presse-papiers.<!-- -->
+<ul>
+<li>Bien que cette méthode alternative de transfert de fichiers soit toujours disponible, elle n&#x27;est nécessaire que pour le transfert de fichiers vers des cibles Mac.</li>
+</ul>
+</li>
+<li>Flip Session (<strong>Windows+Shift+F</strong>) : Permet à votre client de contrôler votre machine à distance et d&#x27;en entendre le son. En tant que contrôleur d&#x27;origine, vous pouvez inverser la session en sélectionnant cette option une seconde fois.</li>
+<li>Démarrer/arrêter la conversation vocale : Vous permet d&#x27;activer ou de désactiver la conversation vocale pour votre session.<!-- -->
+<ul>
+<li>Notez que cette option n&#x27;est pas disponible pour les sessions sans surveillance car elles ne prennent pas en charge la conversation vocale. Cependant, les sessions avec invite prennent toujours en charge cette option.</li>
+</ul>
+</li>
+<li>Démarrer l&#x27;accessibilité à distance : Cette option apparaît lorsqu&#x27;aucun lecteur d&#x27;écran ne fonctionne sur l&#x27;ordinateur distant. Cette option active la parole de votre côté, mais le client n&#x27;a pas à se préoccuper de l&#x27;entendre.<!-- -->
+<ul>
+<li>Si un lecteur d&#x27;écran (y compris Remote Accessibility) est en cours d&#x27;exécution, cette option se transforme en une sortie forcée du lecteur d&#x27;écran en cours d&#x27;exécution. Cette option est utile lorsque le lecteur d&#x27;écran d&#x27;une cible ne répond plus au point que vous ne pouvez pas le redémarrer normalement.</li>
+</ul>
+</li>
+<li>Redémarrer et se reconnecter : Permet de redémarrer l&#x27;ordinateur et de reconnecter automatiquement la session.<!-- -->
+<ul>
+<li>Notez qu&#x27;une cible Mac ne peut pas lancer RIM avant l&#x27;ouverture de la session en raison des limitations de la plate-forme, notamment FileVault.</li>
+<li>Par conséquent, RIM se reconnectera une fois que l&#x27;utilisateur se sera connecté.</li>
+</ul>
+</li>
+<li>Envoyer Contrôle+Alt+Suppr : Envoie cette combinaison de touches à la machine distante.<!-- -->
+<ul>
+<li>L&#x27;équivalent de cette option n&#x27;est pas encore implémenté pour les cibles Mac.</li>
+</ul>
+</li>
+<li>Request Unattended or Prompted Access (Demander un accès sans surveillance ou avec invite) : Cette option vous permet d&#x27;envoyer une demande d&#x27;accès sans surveillance à l&#x27;ordinateur client. Cette option est utile si vous êtes un administrateur système et que vous devez effectuer une maintenance de routine, ou même pour quelque chose d&#x27;aussi simple que le contrôle de votre machine à domicile lorsque vous êtes en déplacement.</li>
+<li>Verrouiller la machine cible : Verrouille la machine cible.</li>
+<li>Afficher les détails de la connexion : Fournit des informations détaillées sur votre connexion, ainsi que sur la machine cible. Les informations comprennent<!-- -->
+<ul>
+<li>Statistiques de connexion</li>
+<li>Informations sur l&#x27;ordinateur, notamment la version du système d&#x27;exploitation, la mémoire vive disponible, etc.</li>
+<li>Processus en cours d&#x27;exécution (cibles Windows)</li>
+<li>Paquets installés (cibles Windows)</li>
+</ul>
+</li>
+<li>Déconnexion de la session (<strong>Windows+Shift+D</strong>) : Met fin à la session.<!-- -->
+<ul>
+<li>N&#x27;oubliez pas que cette option est disponible pour les deux parties de la session.</li>
+</ul>
+</li>
+</ul></div>
+<div hidden=""><ul>
+<li>Mettre à jour le RIM sur la cible : Force une mise à jour du RIM sur l&#x27;ordinateur cible<!-- -->
+<ul>
+<li>Cette option indique si l&#x27;ordinateur cible utilise une ancienne version de RIM.</li>
+</ul>
+</li>
+<li>Minimiser la session (<strong>Option+Shift+M</strong>) : ramène le contrôle sur votre machine comme décrit ci-dessus</li>
+<li>Transférer le fichier vers la cible : Apparaît si un fichier se trouve dans le presse-papiers.<!-- -->
+<ul>
+<li>Bien que cette méthode alternative de transfert de fichiers soit toujours disponible, elle n&#x27;est nécessaire que pour le transfert de fichiers vers des cibles Mac.</li>
+</ul>
+</li>
+<li>Retourner la session (<strong>Option+Shift+F</strong>) : Permet à votre client de contrôler votre machine à distance et d&#x27;en entendre le son. En tant que contrôleur d&#x27;origine, vous pouvez inverser la session en sélectionnant cette option une seconde fois.</li>
+<li>Démarrer/arrêter la conversation vocale : Vous permet d&#x27;activer ou de désactiver la conversation vocale pour votre session.<!-- -->
+<ul>
+<li>Notez que cette option n&#x27;est pas disponible pour les sessions sans surveillance car elles ne prennent pas en charge la conversation vocale. Cependant, les sessions avec invite prennent toujours en charge cette option.</li>
+</ul>
+</li>
+<li>Démarrer l&#x27;accessibilité à distance : Cette option apparaît lorsqu&#x27;aucun lecteur d&#x27;écran ne fonctionne sur l&#x27;ordinateur distant. Cette option active la parole de votre côté, mais le client n&#x27;a pas à se préoccuper de l&#x27;entendre.<!-- -->
+<ul>
+<li>Si un lecteur d&#x27;écran (y compris Remote Accessibility) est en cours d&#x27;exécution, cette option se transforme en une sortie forcée pour le lecteur d&#x27;écran en cours d&#x27;exécution. Cette option est utile lorsque le lecteur d&#x27;écran d&#x27;une cible ne répond plus au point que vous ne pouvez pas le redémarrer normalement.</li>
+</ul>
+</li>
+<li>Redémarrer et se reconnecter : Permet de redémarrer l&#x27;ordinateur et de reconnecter automatiquement la session.<!-- -->
+<ul>
+<li>Notez qu&#x27;une cible Mac ne peut pas lancer RIM avant l&#x27;ouverture de la session en raison des limitations de la plate-forme, notamment FileVault.</li>
+<li>Par conséquent, RIM se reconnectera une fois que l&#x27;utilisateur se sera connecté.</li>
+</ul>
+</li>
+<li>Envoyer Contrôle+Alt+Suppr : Envoie cette combinaison de touches à la machine distante.<!-- -->
+<ul>
+<li>L&#x27;équivalent de cette option n&#x27;est pas encore implémenté pour les cibles Mac.</li>
+</ul>
+</li>
+<li>Request Unattended or Prompted Access (Demander un accès sans surveillance ou avec invite) : Cette option vous permet d&#x27;envoyer une demande d&#x27;accès sans surveillance à l&#x27;ordinateur client. Cette option est utile si vous êtes un administrateur système et que vous devez effectuer une maintenance de routine, ou même pour quelque chose d&#x27;aussi simple que le contrôle de votre machine à domicile lorsque vous êtes en déplacement.</li>
+<li>Verrouiller la machine cible : Verrouille la machine cible.</li>
+<li>Afficher les détails de la connexion : Fournit des informations détaillées sur votre connexion, ainsi que sur la machine cible. Les informations comprennent<!-- -->
+<ul>
+<li>Statistiques de connexion</li>
+<li>Informations sur l&#x27;ordinateur, notamment la version du système d&#x27;exploitation, la mémoire vive disponible, etc.</li>
+<li>Processus en cours d&#x27;exécution (cibles Windows)</li>
+<li>Paquets installés (cibles Windows)</li>
+</ul>
+</li>
+<li>Déconnecter la session (<strong>Option+Shift+D</strong>) : Met fin à la session.<!-- -->
+<ul>
+<li>N&#x27;oubliez pas que cette option est disponible pour les deux parties de la session.</li>
+</ul>
+</li>
+</ul></div>
+<h2>Transferts de fichiers</h2>
+<p>Le RIM offre un moyen simple de transférer des fichiers, quelle que soit la plate-forme utilisée.</p>
+<ol>
+<li>Ouvrez le menu RIM et cliquez sur &quot;Minimiser la session&quot; Vous serez redirigé vers votre ordinateur.</li>
+<li>Sélectionnez le(s) fichier(s) et/ou dossier(s) que vous souhaitez transférer à l&#x27;aide de votre gestionnaire de fichiers.</li>
+<li>Copiez le contenu sélectionné dans le presse-papiers de la manière habituelle. Vous recevrez une notification indiquant qu&#x27;un fichier est prêt à être transféré. Deux options s&#x27;offrent à vous.</li>
+<li><strong>Si la cible est un Mac:</strong>
+<ul>
+<li>Activez le menu de la session RIM et cliquez sur l&#x27;option &quot;Transférer le fichier vers la cible&quot;.</li>
+<li>Une fois le transfert terminé, le Mac cible génère un répertoire temporaire contenant le contenu transféré. Ceux-ci doivent ensuite être copiés et collés dans les répertoires prévus à cet effet.</li>
+</ul>
+</li>
+<li><strong>Si la cible est une machine Windows:</strong>
+<ul>
+<li>Revenez à la session à distance et localisez le dossier de la machine cible dans lequel vous souhaitez coller le contenu.</li>
+<li>Enfin, collez le contenu comme vous le feriez normalement.</li>
+</ul>
+</li>
+</ol>
+<p>Notez que le temps de transfert dépend entièrement de la taille du contenu envoyé et de la vitesse de votre réseau.</p>
+<h2>Module d&#x27;accessibilité à distance</h2>
+<p>Que vous aidiez un utilisateur qui n&#x27;utilise pas de lecteur d&#x27;écran ou que vous diagnostiquiez un problème avec un lecteur d&#x27;écran défectueux, RIM est parfaitement préparé pour vous venir en aide.</p>
+<div><p>Le module d&#x27;accessibilité à distance se compose de deux éléments :</p><ul>
+<li>Un addon pour le lecteur d&#x27;écran NVDA qui permet au lecteur d&#x27;écran de recevoir des données de l&#x27;ordinateur distant</li>
+<li>Un module d&#x27;accessibilité autonome lancé sur l&#x27;ordinateur cible à la demande du contrôleur. L&#x27;avantage de cette approche est que l&#x27;utilisateur final n&#x27;entend pas de discours sur son ordinateur pendant que vous le contrôlez. Au lieu de cela, le module d&#x27;accessibilité à distance achemine la sortie vocale vers la copie en cours d&#x27;exécution de NVDA du côté du contrôleur. De cette manière, vous pouvez aider un utilisateur final de manière accessible sans qu&#x27;il ait à installer ou même à télécharger un lecteur d&#x27;écran.</li>
+</ul><h3>Procédure d&#x27;installation</h3><p>Pour la première initialisation du module d&#x27;accessibilité, voici ce qu&#x27;il faut faire :</p><ol>
+<li>Se connecter à un ordinateur sur lequel aucun lecteur d&#x27;écran n&#x27;est installé.</li>
+<li>Si NVDA est en cours d&#x27;exécution, il vous sera demandé d&#x27;installer un addon qui permettra à votre copie de NVDA de communiquer avec l&#x27;ordinateur distant pendant la session. Acceptez les invites d&#x27;installation et attendez que NVDA redémarre.</li>
+<li>À ce stade, le module d&#x27;accessibilité à distance est entièrement initialisé et vous entendez la synthèse vocale lorsque vous contrôlez l&#x27;ordinateur distant.</li>
+</ol><p>À partir de maintenant, si vous utilisez un lecteur d&#x27;écran sur l&#x27;ordinateur de contrôle, le module d&#x27;accessibilité à distance démarrera automatiquement lors des sessions à distance au cours desquelles l&#x27;ordinateur distant ne dispose pas d&#x27;un lecteur d&#x27;écran. Si vous utilisez un lecteur d&#x27;écran autre que NVDA, RIM désactivera ce lecteur d&#x27;écran et vous fera passer à NVDA. Si vous devez arrêter le module d&#x27;accessibilité à distance sur l&#x27;ordinateur distant afin de lancer un autre lecteur d&#x27;écran, il vous suffit d&#x27;accéder à l&#x27;option &quot;Arrêter l&#x27;accessibilité à distance&quot; dans le menu RIM.</p></div>
+<div hidden=""><p>Le module d&#x27;accessibilité à distance est une configuration spéciale lancée sur le Mac cible à la demande d&#x27;un contrôleur Windows ou Mac. L&#x27;avantage de cette approche est que l&#x27;utilisateur final n&#x27;entend pas de voix sur son ordinateur pendant que vous le contrôlez. Au lieu de cela, le module d&#x27;accessibilité à distance achemine la sortie vocale vers le système vocal du côté du contrôleur. De cette manière, vous pouvez aider un utilisateur final sans qu&#x27;il ait à activer un lecteur d&#x27;écran. Si vous utilisez VoiceOver sur le Mac de contrôle, le module d&#x27;accessibilité à distance démarrera automatiquement lors des sessions à distance au cours desquelles l&#x27;ordinateur distant ne dispose pas d&#x27;un lecteur d&#x27;écran.</p></div>
+<h2>Redémarrage et reconnexion</h2>
+<p>Que vous installiez des mises à jour système ou que vous cherchiez à sortir d&#x27;un blocage du système, RIM vous couvre pendant le processus de redémarrage. En sélectionnant l&#x27;option &quot;Redémarrage et reconnexion&quot; dans le menu RIM, vous pourrez effectuer un redémarrage progressif ou un redémarrage d&#x27;urgence, en fonction de l&#x27;état de l&#x27;ordinateur. Pendant que l&#x27;ordinateur redémarre, RIM vous informe que des tentatives de reconnexion sont en cours.
+Notez que si l&#x27;ordinateur est redémarré par une installation logicielle ou manuellement de la manière habituelle, il vous sera demandé si vous souhaitez reconnecter la session. Il convient également de noter que, dans les deux cas, les cibles Mac ne se reconnecteront qu&#x27;une fois que l&#x27;utilisateur se sera connecté. En effet, RIM ne peut pas démarrer automatiquement sur l&#x27;écran de connexion en raison des limitations de la plate-forme, notamment le cryptage des disques FileVault.</p>
+<h2>Accès sans surveillance ou à l&#x27;aide d&#x27;une invite</h2>
+<p>RIM vous permet, en tant que contrôleur, de configurer les machines pour un accès sans surveillance ou avec invite. Vous pouvez ainsi fournir une assistance à distance sans que l&#x27;utilisateur n&#x27;ait à lancer RIM, à saisir un mot-clé ou même à se trouver à proximité de l&#x27;ordinateur. Cette fonction est utile si vous êtes un administrateur système chargé de la maintenance de routine des ordinateurs de votre groupe de travail, ou pour les clients à qui vous fournissez régulièrement une assistance. Vous pouvez également souhaiter autoriser l&#x27;accès sans surveillance à votre ordinateur personnel, au cas où vous auriez besoin d&#x27;y accéder depuis un autre endroit.
+Il existe plusieurs façons de configurer les machines pour un accès sans surveillance.</p>
+<h3>Pendant une session interactive</h3>
+<ol>
+<li>Ouvrez le menu RIM.</li>
+<li>Sélectionnez &quot;Request Unattended or Prompted Access&quot;</li>
+<li>Il vous sera demandé quel type de connexion vous souhaitez configurer. Les options possibles sont les suivantes :<!-- -->
+<ol>
+<li>Sans surveillance : Permet de lancer des sessions sans aucune intervention de la part de l&#x27;utilisateur final.</li>
+<li>Invité : Cette configuration présente à l&#x27;utilisateur une invite l&#x27;informant que vous vous connectez à sa machine. Il devra appuyer sur Option+Shift+Y sous macOS, ou sur Windows+Shift+Y sous Windows, s&#x27;il souhaite accepter la connexion.</li>
+</ol>
+</li>
+<li>Il vous sera demandé de donner un nom à cette machine. Saisissez un nom personnel pour la machine ou, le cas échéant, l&#x27;identifiant de la machine tel qu&#x27;il apparaît dans votre groupe de travail.</li>
+<li>Appuyez sur la touche Entrée.</li>
+<li>Sur l&#x27;ordinateur client, une boîte de dialogue s&#x27;ouvre pour demander à l&#x27;utilisateur s&#x27;il est d&#x27;accord pour que son ordinateur soit configuré pour l&#x27;accès que vous avez demandé. S&#x27;il répond par l&#x27;affirmative, vous recevrez une invite vous informant que l&#x27;accès a été approuvé.</li>
+</ol>
+<h4>Note pour les titulaires de comptes personnels sans surveillance</h4>
+<p>Si vous avez utilisé tous les emplacements de machine attribués à votre compte, le RIM n&#x27;exécutera pas la demande. Dans ce cas, vous avez deux options, toutes deux possibles via le tableau de bord RIM :</p>
+<ol>
+<li>Désenregistrer l&#x27;une de vos machines, ce qui libère un emplacement.</li>
+<li>Augmenter votre abonnement avec plus d&#x27;emplacements.</li>
+</ol>
+<h3>Enregistrement d&#x27;une machine sur votre compte RIM</h3>
+<p>Si vous souhaitez enregistrer une de vos machines pour un accès sans surveillance, vous pouvez le faire sans devoir démarrer une session interactive avec la machine.</p>
+<ol>
+<li>Démarrez RIM en mode d&#x27;aide à la réception.</li>
+<li>Cliquez sur le bouton &quot;Ajouter cette machine à votre compte RIM&quot;.</li>
+<li>Saisissez votre adresse électronique, puis cliquez sur suivant.</li>
+<li>Attendez que le code de connexion en deux étapes arrive, saisissez-le, puis vous devriez être connecté.</li>
+<li>Il vous sera demandé quel type d&#x27;accès vous souhaitez configurer pour cette machine. Vous avez le choix entre les options suivantes :<!-- -->
+<ol>
+<li>Sans surveillance : Permet de lancer des sessions sans aucune intervention de la part de l&#x27;utilisateur final.</li>
+<li>Invité : Cette configuration présente à l&#x27;utilisateur une invite l&#x27;informant que vous vous connectez à sa machine.</li>
+</ol>
+</li>
+<li>Donnez un nom à la machine, puis activez le bouton &quot;Ajouter une machine&quot;.</li>
+<li>La machine sera enregistrée dans votre compte, ce qui permettra à toutes les machines de contrôle connectées à votre compte RIM de se connecter à cette machine.</li>
+</ol>
+<h4>Note à l&#x27;attention des titulaires de comptes personnels sans surveillance</h4>
+<p>Si vous avez utilisé tous les emplacements de machine attribués à votre compte, le RIM n&#x27;exécutera pas la demande. Dans ce cas, vous avez deux options, toutes deux possibles via le tableau de bord RIM :</p>
+<ol>
+<li>Désenregistrer l&#x27;une de vos machines, ce qui libère un emplacement.</li>
+<li>Mettre à jour votre abonnement avec plus de slots.</li>
+</ol>
+<h3>Se connecter</h3>
+<p>Maintenant que nous avons enregistré la machine pour un accès sans surveillance, voici comment démarrer une session.</p>
+<ol>
+<li>Démarrez RIM en mode contrôleur.</li>
+<li>Plutôt que de saisir un mot-clé, localisez et activez le bouton &quot;Choisir une machine&quot;.</li>
+<li>Lorsque vous cliquez sur ce bouton, une liste de machines apparaît. Choisissez celle que vous souhaitez, puis appuyez sur la touche &quot;Entrée&quot;. Vous pouvez également utiliser la barre de recherche pour réduire la liste à une machine spécifique.</li>
+</ol>
+<p>Si la machine cible est configurée pour un accès guidé, l&#x27;utilisateur final sera invité à répondre. S&#x27;il répond par l&#x27;affirmative, vous serez connecté. Si la session n&#x27;est pas surveillée, vous serez immédiatement connecté et placé dans la zone de contrôle à distance.</p>
+<p>Remarque : les conversations vocales ne sont pas prises en charge lors des sessions sans surveillance, mais elles le sont lors des sessions avec invite.</p>
+<h3>Création d&#x27;un raccourci pour une session sans surveillance</h3>
+<p>Pour plus de commodité, vous pouvez créer des raccourcis sur le bureau qui vous permettent de lancer automatiquement des sessions sans surveillance. Pour ce faire, procédez comme suit</p>
+<ol>
+<li>Accédez à la liste des ordinateurs sans surveillance et sélectionnez celui pour lequel vous souhaitez créer un raccourci.</li>
+<li>Cliquez sur le bouton &quot;Créer un raccourci&quot;.</li>
+<li>Un raccourci sera automatiquement ajouté à votre bureau.</li>
+</ol>
+<p>Lorsque vous activez ce raccourci, vous entrez automatiquement dans la session à distance ou vous envoyez une invite à la machine de l&#x27;utilisateur pour qu&#x27;il l&#x27;accepte.</p>
+<div><h4>Autres façons d&#x27;utiliser les raccourcis de session sans surveillance</h4><p>Les raccourcis de session sans surveillance, comme tous les autres raccourcis, peuvent être associés à des touches de raccourci globales. Cela peut s&#x27;avérer extrêmement utile si vous êtes un technicien de maintenance qui gère plusieurs ordinateurs dans un groupe de travail. Par exemple, si votre groupe de travail se compose de 6 ordinateurs sur lesquels vous effectuez une maintenance de routine, vous pouvez configurer Alt+Contrôle+1 à 6 comme touches de raccourci pour chaque machine respective. Cela devrait accélérer considérablement votre flux de travail.
+En outre, vous pouvez appeler une session sans surveillance via la boîte d&#x27;exécution si vous copiez le raccourci dans votre répertoire utilisateur. Une fois le raccourci copié, vous pouvez démarrer une session sans surveillance en tapant nom-de-la-session.url dans la boîte d&#x27;exécution.</p></div>
+<h3>Révoquer l&#x27;accès sans surveillance</h3>
+<p>Si vous ne souhaitez plus que votre machine soit contrôlée sans surveillance, vous pouvez révoquer l&#x27;accès au contrôleur. Il n&#x27;est pas nécessaire d&#x27;être dans une session pour effectuer cette opération.</p>
+<div><ol>
+<li>Accédez à l&#x27;icône Remote Incident Manager (Gestionnaire d&#x27;incidents à distance) dans la barre d&#x27;état système.<!-- -->
+<ol>
+<li>Si vous utilisez le clavier, appuyez sur windows+b, puis sur espace, puis sur la flèche gauche ou droite jusqu&#x27;à ce que vous trouviez l&#x27;icône.</li>
+</ol>
+</li>
+<li>Cliquez avec le bouton droit de la souris sur cette icône, ou appuyez sur la touche applications ou shift+f10.</li>
+<li>Sélectionnez l&#x27;option &quot;Révoquer l&#x27;accès sans surveillance&quot;.</li>
+<li>Vous arriverez à une liste d&#x27;ordinateurs, sélectionnez celui que vous voulez révoquer.</li>
+<li>Il vous sera demandé si vous souhaitez révoquer la machine ; répondez par l&#x27;affirmative.</li>
+</ol></div>
+<div hidden=""><ol>
+<li>Accédez à l&#x27;icône du gestionnaire d&#x27;incidents à distance dans vos menus extras/états.<!-- -->
+<ol>
+<li>Si vous utilisez VoiceOver, appuyez deux fois sur VO+M, puis localisez l&#x27;icône du menu Remote Incident Manager.</li>
+<li>Cliquez sur cette icône ou appuyez sur VO+Espace.</li>
+</ol>
+</li>
+<li>Sélectionnez l&#x27;option &quot;Révoquer l&#x27;accès sans surveillance&quot;.</li>
+<li>Vous arrivez sur une liste d&#x27;ordinateurs, sélectionnez celui que vous voulez révoquer.</li>
+<li>Il vous sera demandé si vous souhaitez révoquer la machine ; répondez par l&#x27;affirmative.</li>
+</ol></div>
+<p>Vous n&#x27;avez plus qu&#x27;à répondre par l&#x27;affirmative Le contrôleur recevra un message indiquant que cette machine n&#x27;est plus disponible pour un accès sans surveillance. S&#x27;il a de nouveau besoin d&#x27;un accès sans surveillance, il peut recommencer la procédure de demande d&#x27;autorisation d&#x27;accès sans surveillance décrite ci-dessus.</p>
+<div><h2>Référence de la commande clé</h2><table><thead><tr><th>Action</th><th>Commande</th></tr></thead><tbody><tr><td>Accès au menu RIM - Windows+Shift+Backspace - Minimiser la session - Windows+Shift+Backspace - Windows+Shift+Backspace - Windows+Backspace</td><td></td></tr><tr><td>Minimiser la session</td><td>Windows+Shift+M</td></tr><tr><td>Windows+Shift+M</td><td>Inverser la session</td></tr><tr><td>Windows+Shift+F</td><td>Déconnecter la session (contrôleur ou cible)</td></tr></tbody></table></div>
+<div hidden=""><table><thead><tr><th>Action</th><th>Commande</th></tr></thead><tbody><tr><td>Accès au menu RIM</td><td>Option+Shift+Backspace</td></tr><tr><td>Minimiser la session</td><td>Option+Shift+M</td></tr><tr><td>Retourner la session</td><td>Option+Shift+F</td></tr><tr><td>Déconnecter la session (contrôleur ou cible)</td><td>Option+Shift+D</td></tr></tbody></table></div>console.log(pageProps);</div><footer><a class="path-prev" role="button" href="/fr/gettingconnected">Previous Section</a><a class="path-next" role="button" href="/fr/dashboard">Next Section</a><div class="platform-switcher"><button type="button" hidden="">Switch to Windows content</button><button type="button">Switch to macOS content</button></div><div class="languageSelector"><label for="langChange">Langue:</label><select id="langChange"><option value="en" selected="">English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="sv">Swedish</option><option value="pt">Portuguese</option></select><button>Go</button></div></footer></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/fr/workingwithsessions","query":{},"buildId":"cmXcQ_r2TQVpi_9IsN491","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
