@@ -24,13 +24,10 @@ export const englishPages = allPages.filter(isEnglishEntry)
 
 export const pageOrder: string[] = [
   "welcome",
-  "systemspecs",
-  "installation",
   "gettingconnected",
-  "workingwithsessions",
+  "makingmeetings",
   "dashboard",
   "localization",
   "faq",
   "plans",
-  "changelog",
 ]
