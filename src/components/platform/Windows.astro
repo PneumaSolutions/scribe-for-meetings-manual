@@ -1,0 +1,5 @@
+---
+import { getPlatformFromURL } from "~/util"
+---
+
+{getPlatformFromURL(Astro.url.pathname) === "windows" ? <slot /> : null}

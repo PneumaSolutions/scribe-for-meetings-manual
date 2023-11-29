@@ -1,0 +1,29 @@
+---
+import UIString from "~/components/UIString.astro"
+import type { Platform } from "~/util"
+
+export interface Props {
+  lang: string
+  platform: Platform
+  slug: string
+}
+
+const { lang, platform, slug } = Astro.props
+---
+
+<div>
+  {
+    platform === "windows" ? null : (
+      <a href={`/${lang}/windows/${slug}/`}>
+        <UIString key="platform.switchToWindows" />
+      </a>
+    )
+  }
+  {
+    platform === "macos" ? null : (
+      <a href={`/${lang}/macos/${slug}/`}>
+        <UIString key="platform.switchToMacOS" />
+      </a>
+    )
+  }
+</div>
