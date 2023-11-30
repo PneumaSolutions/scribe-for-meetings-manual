@@ -33,8 +33,7 @@ if (pageIndex < 0) {
   </head>
   <body>
     <div>
-      <h2>Remote Incident Manager (RIM)</h2>
-      <PlatformSwitcher lang={lang} platform={platform} slug={slug} />
+      <h2>Scribe for Meetings</h2>
       <LanguageSwitcher origLang={lang} platform={platform} slug={slug} />
       <form role="search" action={`/${lang}/${platform}/search/`} method="get">
         <label for="q"><UIString key="search.label" /></label>
@@ -116,7 +115,6 @@ if (pageIndex < 0) {
               </a>
             )
           }
-          <PlatformSwitcher lang={lang} platform={platform} slug={slug} />
           <LanguageSwitcher origLang={lang} platform={platform} slug={slug} />
         </footer>
       </div>

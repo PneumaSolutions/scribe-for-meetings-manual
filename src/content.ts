@@ -25,7 +25,6 @@ export const englishPages = allPages.filter(isEnglishEntry)
 export const pageOrder: string[] = [
   "welcome",
   "systemspecs",
-  "installation",
   "gettingconnected",
   "makingmeetings",
   "dashboard",
