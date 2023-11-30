@@ -1,5 +1,4 @@
 export default {
-  "title.restOfText": "Scribe for Meetings Documentation",
   "footer.next": "Next",
   "footer.previous": "Previous",
   "language.label": "Language",
