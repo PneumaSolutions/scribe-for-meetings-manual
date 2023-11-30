@@ -1,0 +1,342 @@
+---
+title: Änderungsprotokoll
+---
+
+import Windows from "~/components/platform/Windows.astro"
+import MacOS from "~/components/platform/MacOS.astro"
+
+Die RIM-Versionen werden durch Überschriften auf Ebene 2 gekennzeichnet. Umfangreiche Aktualisierungen mit mehreren Funktionen für beide Plattformen werden in Mac- und Windows-Unterüberschriften auf Ebene 3 unterteilt.
+## 3.2.13
+## Windows
+Es wurde ein Problem mit der Tastatureingabe behoben, wenn eine Verbindung zu Zielrechnern mit JAWS 2024 hergestellt wurde.
+## 3.2.12
+Ein seltenes Problem wurde behoben, das verhindern konnte, dass sich die RIM-App mit dem Cloud-Dienst verbindet.
+## 3.2.11
+Im Fenster Verbindungsdetails wurde eine neue Schaltfläche hinzugefügt, mit der Sie den Zielrechner auffordern können, seine RIM-Protokolle an Pneuma Solutions zu senden. Bitte verwenden Sie diese Funktion nur, wenn Sie von Pneuma Solutions dazu aufgefordert werden.
+## 3.2.10
+Es wurde ein Problem behoben, das dazu führen konnte, dass RIM bis zum nächsten Neustart der Anwendung nicht mehr funktionierte, wenn die Internetverbindung des Rechners vorübergehend nicht verfügbar war.
+## 3.2.9
+### macOS
+Wir sind leider nicht mehr in der Lage, die automatische Stereomikrofoneingabe in Sprachkonversationen auf dieser Plattform anzubieten, da dies in einigen Fällen die Mikrofoneingabe auf einem Mac überhaupt nicht funktionierte. Bitte beachten Sie, dass diese Änderung keinen Einfluss auf die Audioausgabe auf dem Zielrechner hat; diese ist immer noch Stereo.
+## 3.2.8
+## macOS
+Es wurde ein Fehler behoben, der verhinderte, dass RIM angezeigt wurde, wenn die Anwendung über den Finder oder das Dock aktiviert wurde, anstatt den globalen Hotkey zu verwenden.
+## 3.2.7
+Sprachkonversationen verwenden nun automatisch Stereo, wenn die Audio-Hardware dies unterstützt. Dies ist nützlich, wenn RIM für die Ausbildung in der Audioproduktion verwendet wird.
+## 3.2.6
+Ein kürzlich aufgetretenes Problem wurde behoben, das verhindern konnte, dass RIM bei einer Neuinstallation des Betriebssystems funktioniert.
+## 3.2.5
+Die Meldung, die die verbleibende freie Zeit anzeigt, wurde korrigiert.
+## 3.2.4
+Die Lokalisierung von RIM in andere Sprachen ist jetzt in der Beta-Phase. Die folgenden Sprachen werden derzeit unterstützt: Deutsch, Spanisch, Französisch, Italienisch und Schwedisch. Um RIM in einer dieser Sprachen zu verwenden, klicken Sie auf die Schaltfläche "Sprache (BETA)" am unteren Rand des Fensters "Hilfe bereitstellen" oder "Hilfe erhalten", wählen Sie dann Ihre Sprache aus der Dropdown-Liste und klicken Sie auf die Schaltfläche "Sprache wechseln". Wir freuen uns auf Ihr Feedback.
+## 3.2.1
+* Der Prozess zum Starten einer neuen RIM-Sitzung auf der Controllerseite ist nun reibungsloser. Das ursprüngliche Fenster, in dem Sie Ihr Schlüsselwort eingegeben oder einen Zielcomputer ausgewählt haben, verschwindet erst, wenn das Hauptfenster der Sitzung bereit ist. Wenn das ursprüngliche Fenster nicht mehr den Fokus hat, wenn die Sitzung beginnt, z. B. wenn Sie die Aufgabe gewechselt haben, während Sie darauf warteten, dass der Zielbenutzer ein Schlüsselwort eingibt, dann wird RIM Sie benachrichtigen, dass die Sitzung bereit ist, und das Hauptsitzungsfenster wird angezeigt, wenn Sie den Fokus wieder auf RIM richten.
+* nur macOS: Als Teil der vorherigen Änderung haben wir die Art und Weise geändert, wie RIM sich selbst im Dock und in der Command+Tab-Liste hinzufügt und entfernt. Bitte lassen Sie uns wissen, wenn Sie Probleme mit dem aktuellen Verhalten feststellen.
+* Nur Windows-Ziele: Wenn ein Bildschirmlesegerät auf dem Zielcomputer gestartet wird, während die Fernzugriffsfunktion aktiv ist, wird die Fernzugriffsfunktion stillschweigend beendet, um eine doppelte Sprachausgabe zu vermeiden.
+
+## 3.2.0
+Erste offizielle Version für Mac OS! Neue Funktionen umfassen:
+* möglichkeit, unbeaufsichtigte oder geführte Sitzungen aus einer interaktiven Sitzung heraus zu konfigurieren.
+* Alle neuen Berechtigungsanweisungen für Benutzer, die nicht VoiceOver verwenden.
+
+## 3.1.49
+Diese Version bietet eine konsistente, plattformübergreifende Möglichkeit, das RIM-Controller-Sitzungsmenü mit der Maus zu öffnen. Ein Controller kann entweder auf das große RIM-Symbol in der oberen linken Ecke des Sitzungsfensters klicken oder, wie bisher unter Windows möglich, mit der rechten Maustaste auf eine beliebige Stelle in der Titelleiste klicken.
+## 3.1.48
+## Mac
+* Unterstützung für den FN+Zahlentaste-Workaround zur Verwendung der Funktionszeile auf MacBooks wurde hinzugefügt.
+* RIM für Mac passt nun die Menüleiste an, und insbesondere die Option "Über" im Anwendungsmenü öffnet nun unseren eigenen Über-Dialog anstelle des generischen Dialogs.
+
+## 3.1.47
+### Windows
+Wenn ein Mac-Controller an ein Windows-Ziel angeschlossen wird und beide Seiten das gleiche, nicht-US-amerikanische Tastaturlayout verwenden, wurden die Tastatureingaben des Controllers nicht korrekt übersetzt. Version 3.1.47 für Windows behebt dieses Problem.
+## 3.1.46
+Diese Version bietet Unterstützung für das neue RIM Personal Community Support-Paket.
+
+## 3.1.45
+### Mac
+RIM ist nun in der Lage, die Aufnahme von Bildschirminhalten und die Audioausgabe automatisch fortzusetzen, wenn der Zielcomputer während einer Sitzung auf den Sperrbildschirm wechselt.
+
+## 3.1.44
+### Mac
+* Implementiert Neustart und Wiederverbindung für Mac-Ziele, einschließlich Standard- und Notfall-Neustart.
+    * Wie beim unbeaufsichtigten Zugriff erscheint RIM aufgrund von Plattformbeschränkungen, insbesondere FileVault, nicht auf dem macOS-Anmeldebildschirm. Der Zielbenutzer muss sich also erneut anmelden, bevor RIM wieder eine Verbindung herstellen kann.
+* Die Benachrichtigung über Dateiübertragungen, die mit dem letzten Update eingeführt wurde, wird jetzt nur noch einmal pro RIM-Sitzung angezeigt.
+
+## 3.1.43
+### Mac
+Mit diesem Update wird die Benutzeroberfläche für Dateiübertragungen geändert. Wenn eine oder mehrere Dateien auf beiden Seiten der Verbindung in die Zwischenablage gelegt werden, erhält der Controller nun eine Benachrichtigung, dass die Dateiübertragung über das RIM-Menü abgeschlossen werden kann. Wenn der Controller diese Menüoption wählt, wird die Dateiübertragung durchgeführt, und anschließend wird auf dem Zielrechner ein temporärer Ordner geöffnet, der die übertragene(n) Datei(en) enthält. Diese Methode der Dateiübertragung ist notwendig, wenn der Zielcomputer ein Mac ist. Handelt es sich bei dem Zielrechner um einen Windows-Rechner, kann die Dateiübertragung entweder mit dieser neuen Methode oder mit der alten Methode des Einfügens im Datei-Explorer auf dem Zielrechner abgeschlossen werden.
+## 3.1.42
+### Mac
+* RIM für Mac arbeitet jetzt als unbeaufsichtigtes Ziel. Es führt auch Aktualisierungen im Hintergrund durch, wie es die Windows-Version tut.
+    * Am Zugriff auf den Sperrbildschirm müssen wir noch arbeiten, und wir glauben nicht, dass wir den Zugriff auf den Anmeldebildschirm ermöglichen können, bevor ein Benutzer überhaupt eingeloggt ist, da die Plattform dies nicht zulässt.
+    * wir haben noch nicht herausgefunden, wie oder ob wir in der Lage sein werden, vorkonfigurierte Zielinstallationsprogramme zu implementieren, so dass Sie eine der anderen verfügbaren Methoden zur Einrichtung des unbeaufsichtigten Zugriffs verwenden müssen.
+* Eliminiert eine Quelle für Latenz bei Audioaufnahmen von Mac-Zielen.
+
+## 3.1.41
+### Windows
+Ein Problem wurde behoben, das manchmal zum Absturz von RIM führte, wenn während einer RIM-Sitzung Aktivitäten in der Windows-Zwischenablage stattfanden.
+## 3.1.40
+Fügt weitere Protokollierung in Bezug auf Audio auf dem Ziel hinzu. Wenn Sie also verzögertes Audio auf dem Zielgerät reproduzieren können, tun Sie dies bitte mit dieser Version und senden Sie dann die Protokolle. 
+## 3.1.39
+### Mac
+Dieses Update fügt Mausunterstützung für Mac-Targets hinzu.
+RIM bittet nun um die Erlaubnis, die Zugänglichkeitsfunktionen von macOS zu nutzen. Bei neuen
+installationen ersetzt dies die Erlaubnisanfrage für die Eingabeüberwachung, so dass
+die Gesamtzahl der Berechtigungsschritte nicht erhöht. Aber für Updates,
+müssen Sie diese Erlaubnis erteilen, bevor Sie RIM nach der Aktualisierung verwenden können.
+## 3.1.38
+### Mac
+Es wurde ein Absturz behoben, der Mac-Ziele bei der Sitzungsinitialisierung betraf.
+## 3.1.37
+Diese Aktualisierung stellt einen wichtigen Meilenstein in der Mac-Portierung von RIM dar. Die Remote
+die Fernzugriffsfunktion von RIM ist nun verfügbar, wenn eine Verbindung zu Mac
+zielen. Mit einer speziellen Konfiguration von VoiceOver auf dem Zielrechner
+zielrechner hört der Controller, egal ob er Windows oder Mac verwendet, Sprache
+während der Zielbenutzer keine Sprache oder Soundeffekte hört. Es
+es gibt auch keine sichtbaren Anzeichen dafür, dass VoiceOver auf dem Zielcomputer läuft.
+Das Starten der Fernzugänglichkeit, entweder automatisch oder
+manuell, funktioniert genauso wie bei Windows-Zielen. Und natürlich,
+wenn die Sitzung endet, wird die spezielle Konfiguration von VoiceOver geschlossen
+beendet, und VoiceOver wird auf seine vorherigen Einstellungen zurückgesetzt.
+
+Beachte, dass sowohl auf Windows- als auch auf Mac-Controllern jetzt die
+version 3.1.37 laufen müssen, um die volle Funktionalität bei der Verbindung mit einem Mac-Ziel zu erhalten.
+## 3.1.36
+## Windows
+Die Fernzugriffsfunktion ist jetzt mit NVDA 2023.1 kompatibel.
+## 3.1.35
+### Mac
+* RIM verwendet jetzt durchgängig Stereo-Audio, insbesondere für Mac-Controller.
+* Bei der Verwendung von RIM für Mac als Controller mit der Fernzugriffsfunktion verwendet RIM nun die Stimme und die Sprechgeschwindigkeit, die im Abschnitt Gesprochener Inhalt der Systemeinstellungen definiert sind.
+
+## 3.1.34
+### Mac
+Wenn ein Mac-Controller eine Verbindung zu einem Windows-Ziel herstellt, auf dem kein Screenreader läuft, können Sie nun das Modul für die Fernzugänglichkeit auf dem Windows-Ziel ausführen und die Sprachausgabe auf dem Mac-Controller erhalten. Beachte, dass du immer noch NVDA-Tastaturbefehle verwenden musst, wenn du mit dem Windows-Ziel interagierst, nicht VoiceOver-Befehle, und dass wir das NVDA-Laptop-Tastaturlayout verwenden. 
+## 3.1.33
+Als Reaktion auf Benutzerfeedback haben wir den Soundeffekt bei der Anzeige von Benachrichtigungen über den Status einer Fernsitzung entfernt.
+## 3.1.32
+### Mac
+RIM unterstützt nun die Fn-Taste, wenn ein Mac-Laptop als Controller verwendet wird.  
+Beachten Sie, dass die oberste Reihe der Funktionstasten von RIM immer als F1 bis F12 behandelt wird und Sie die Fn-Taste verwenden müssen, wenn Sie diese Tasten als Systemfunktionstasten (zum Einstellen der Lautstärke usw.) verwenden möchten, unabhängig davon, wie die Systemeinstellungen auf beiden Seiten der Verbindung eingestellt sind. Wir gehen davon aus, dass Sie diese Tasten in einer Fernsitzung wahrscheinlich ohnehin die meiste Zeit als F-Tasten verwenden möchten. Ein Verhalten wie die Verwendung von Fn+Pfeiltaste links zum Drücken von Home funktioniert wie erwartet.
+## 3.1.31
+### Mac
+* RIM hat bisher die Sperre für Tastatureingaben nicht aufgehoben, wenn bestimmte Dialoge angezeigt wurden, z. B. der Dialog, der die Erlaubnis zum Zugriff auf das Mikrofon anfordert. Dies ist nun behoben.
+* Wenn eine Verbindung von Mac zu Windows oder umgekehrt hergestellt wird, ist es nicht mehr möglich, dass der Controller das RIM-Menü auf dem Zielrechner auslöst. Diese Korrektur erfordert das entsprechende Update von RIM für Windows.
+
+### Windows
+* Es wurde eine Möglichkeit hinzugefügt, die Logdateien von RIM an Pneuma Solutions zu senden, eingeführt für Mac OS in Version 3.1.29. Bitte verwenden Sie diese Funktion nur, wenn Sie von einem Vertreter von Pneuma Solutions dazu aufgefordert werden.
+* RIM spielt nun einen Ton ab, wenn es eine Benachrichtigung anzeigt.
+
+## 3.1.30
+### Mac
+RIM fragt nun nach der Erlaubnis, Benachrichtigungen anzuzeigen, sowohl beim ersten Start als auch für bestehende Benutzer, die von einer früheren Version aktualisieren. Wie bei den meisten anderen Berechtigungen muss für die Erteilung dieser Berechtigung ein Schalter in den Systemeinstellungen umgelegt werden. Wir haben auch unseren eigenen Sound für diese
+benachrichtigungen hinzugefügt.
+## 3.1.29
+### Mac
+* Wir glauben, dass das von einigen Benutzern gemeldete Problem mit der Anforderung der Berechtigung zur Überwachung der Tastatureingabe auf Rechnern mit Karabiner Elements nun behoben ist.
+* Der RIM-Über-Dialog hat jetzt eine Schaltfläche zum Senden von Protokollen. Bitte verwenden Sie dies nur, wenn Sie von Pneuma Solutions dazu aufgefordert werden.
+
+## 3.1.28
+### Mac
+Wenn Sie RIM als Controller verwenden, ist es jetzt mit erweiterten Tastaturanpassungstools wie Karabiner Elements kompatibel.
+## 3.1.27
+### Mac
+Dies ist ein kleines Update mit nur zwei Änderungen:
+* RIM benötigt nun macOS 13.0 (Ventura) oder höher.
+* RIM wurde so korrigiert, dass die virtuelle Tastatur nur verbunden wird, wenn RIM tatsächlich als Ziel läuft. Das bedeutet, dass der Tastatur-Setup-Assistent nicht angezeigt wird, wenn RIM als Controller verwendet wird. Wir suchen noch nach Möglichkeiten, um diesen Dialog ganz zu vermeiden.
+
+## 3.1.26
+Erste Betaversion von RIM für Mac OS.
+## 3.1.24
+* Wenn eine Verbindung zu einem Zielrechner mit einer geringeren Bildschirmauflösung oder einem höheren DPI-Faktor (Dots per Inch) als der Controller hergestellt wird, skaliert RIM nun die Anzeige des entfernten Zielrechners so, dass sie auf den Bildschirm des Controllers passt, was die Arbeit mit dem entfernten Rechner visuell erleichtert.
+
+## 3.1.23
+* Unterstützung für im Voraus bezahlte Stunden wurde hinzugefügt.
+
+## 3.1.22
+* Es wurde ein Fehler behoben, durch den RIM auf dem Zielrechner manchmal in eine Schleife geriet, die unbeaufsichtigte Verbindungen verhinderte.
+
+## 3.1.21
+* Es wurde eine neue Tastenkombination, Windows+Umschalt+M, hinzugefügt, um in einem Sitzungsfenster das Fenster zu minimieren und den Tastaturfokus auf den lokalen Rechner (Controller) zurückzubringen.
+
+## 3.1.20
+* Es wurde eine Protokollierung hinzugefügt, die uns bei der Diagnose von Berichten über unbeaufsichtigte Ziele, die zeitweise vom RIM getrennt werden, helfen wird.
+
+## 3.1.19
+* Es wurden einige Fehler bei der Behandlung von entfernten Tastatureingaben behoben. Insbesondere wenn JAWS auf dem Zielcomputer läuft, erkennt JAWS nun korrekt das Drücken der Pause- und NumLock-Taste auf dem Controller. Bitte lassen Sie uns wissen, wenn Sie Regressionen bei der Behandlung von Tastatureingaben finden, insbesondere bei nicht-amerikanischen Tastaturlayouts.
+
+## 3.1.18
+* Es wurde ein Problem behoben, das verhinderte, dass sich RIM auf Zielrechnern aktualisierte, die sich auf dem Windows-Anmeldebildschirm befanden, ohne dass eine aktive Benutzersitzung bestand.
+
+## 3.1.17
+* Seit dem letzten Update haben wir Berichte erhalten, dass der Umschaltmodifikator auf dem Zielcomputer stecken bleibt, wenn JAWS ausgeführt wird. Wir glauben, dass dieses Update dieses Problem behebt. Bitte lassen Sie uns wissen, wenn Sie weiterhin Probleme mit feststeckenden Modifikatoren haben.
+* Es wurde ein Fehler behoben, der dazu führte, dass RIM NVDA am Ende einer Sitzung auf dem Zielrechner heruntergefahren hat, wenn NVDA auf dem Zielrechner gestartet wurde, nachdem der Fernzugriff aktiviert wurde.
+
+## 3.1.16
+* Wenn JAWS auf dem Zielrechner mit aktivierter Unified Keyboard Processing Funktion läuft, reagiert JAWS nun zuverlässig auf Tastendrücke vom Controller.
+* Es wurde ein Fehler behoben, der sporadisch auftrat, wenn das Add-on für die Fernzugänglichkeit gestartet wurde, nachdem das NVDA Add-on auf dem Controller-Rechner installiert oder aktualisiert wurde.
+
+## 3.1.15
+* Wenn Sie eine Verbindung zu einem Zielrechner herstellen, auf dem kein Bildschirmleseprogramm läuft, aktiviert RIM automatisch die Fernzugänglichkeit, wenn Sie ein Bildschirmleseprogramm auf dem Controller-Rechner verwenden. Wenn Sie einen anderen Bildschirmleser als NVDA auf dem Controller-Rechner verwenden, wird RIM diesen Bildschirmleser sogar automatisch beenden und NVDA starten, wenn Sie ihn installiert haben.
+* Es wurden Probleme behoben, die verhinderten, dass das Fernzugriffsmodul Ihre lokalen NVDA-Konfigurationseinstellungen wie Tastaturlayout und Tippecho verwenden konnte.
+
+## 3.1.14
+* Die Wiederherstellung einer Verbindung bei Verbindungsproblemen ist jetzt zuverlässiger.
+* Es wurde ein Problem behoben, das manchmal dazu führte, dass der RIM-Hintergrundaktualisierungsprozess anhielt.
+* Wenn auf dem Controller eine ältere Version von RIM läuft als auf dem Ziel, enthält das Menü nicht mehr die Option, das Ziel zu aktualisieren.
+* Wenn ein Bildschirmlesegerät oder das RIM-Modul für die Fernzugänglichkeit auf dem Zielcomputer läuft, können Sie es jetzt über eine Option im Menü stoppen.
+
+## 3.1.13
+* Es wurde ein Fehler behoben, der dazu führte, dass Benutzer nach der Installation einiger Windows-Updates bei RIM abgemeldet wurden.
+
+## 3.1.12
+* Auf vielfachen Wunsch fordert RIM am Ende einer Sitzung nicht mehr zur Eingabe eines Kommentars auf. Sie können weiterhin Kommentare zu Sitzungen im RIM-Dashboard abgeben. Möglicherweise werden wir in Zukunft eine konfigurierbare Option für die Aufforderung zur Abgabe eines Kommentars als Funktion hinzufügen.
+
+## 3.1.11
+* Wenn auf dem Zielrechner mindestens diese Version von RIM läuft, aber noch nicht auf die neueste Version aktualisiert wurde, kann der Controller nun den Zielrechner dazu zwingen, seine RIM-Installation über eine neue Option im Sitzungsmenü zu aktualisieren.
+
+## 3.1.10
+* Sie können nun optional einen Kommentar am Ende einer RIM-Sitzung hinzufügen. Die Sitzungskommentare können im RIM-Dashboard angezeigt werden.
+* Das Fenster Verbindungsdetails wurde verbessert. Die Statistiken werden live aktualisiert, solange das Fenster geöffnet ist, und das Fenster enthält nun auch Informationen über den Zielcomputer.
+
+## 3.1.9
+* Es wurde ein Problem behoben, das manchmal dazu führte, dass eine RIM-Sitzung beim Versuch, die Verbindung wiederherzustellen, stecken blieb.
+
+## 3.1.8
+* Es wurde ein Problem behoben, das manchmal den Start des Fernzugriffsmoduls verhinderte.
+
+## 3.1.7
+* Bei der Auswahl eines Zielrechners für eine unbeaufsichtigte oder angeforderte Sitzung können Sie jetzt Ihre Zielrechner durchsuchen. Dazu drücken Sie auf dem Bildschirm "Hilfe bereitstellen" wie zuvor auf "Rechner auswählen", wechseln zum Feld "Suchen", geben den zu suchenden Text ein und drücken dann entweder die Eingabetaste oder die Schaltfläche "Suchen".
+
+## 3.1.6
+* Es wurde ein Problem behoben, das es manchmal unmöglich machte, die JAWS-Sprachausgabe auf dem sicheren Desktop zu unterbrechen.
+
+## 3.1.5
+* Es wurde ein visueller Anzeigefehler behoben, der dazu führte, dass sich die Liste der unbeaufsichtigten Zielrechner mit den darunter liegenden Schaltflächen überschnitt.
+
+## 3.1.4
+* Unternehmenskunden können RIM jetzt mit einem MSI-basierten Installationsprogramm bereitstellen.
+
+## 3.1.3
+* Es wurde ein Fehler behoben, der zum Absturz von RIM führen konnte, wenn das RIM-Menü geöffnet ist, wenn eine Sitzung wieder verbunden wird.
+
+## 3.1.2
+* Der visuelle Stil wurde angepasst, um für sehbehinderte Benutzer besser zugänglich zu sein.
+* Es wurden Fehlermeldungen hinzugefügt, wenn erforderliche Felder leer gelassen wurden.
+
+## 3.1.1
+* Wenn Sie auf die Schaltfläche "RIM Dashboard" im Fenster "Hilfe bereitstellen" klicken, bleibt dieses Fenster nun geöffnet.
+
+## 3.1.0
+Mit dieser Version wird ein vollständiges Management-Dashboard für Controller hinzugefügt.
+* Alle Abonnenten haben Zugriff auf das Dashboard, wobei der Funktionsumfang durch die Abonnementstufe bestimmt wird.
+* Die In-App-Funktionen zum Umbenennen, Löschen und Erstellen von Installern für unbeaufsichtigte Rechner wurden entfernt, da dies nun Teil des Dashboards ist
+* Die Willkommensseite wurde wieder eingeführt.
+
+## 3.0.8
+Es wurde ein Fehler behoben, der manchmal verhinderte, dass die Bildschirmausgabe aus der Ferne funktionierte, wenn eine Aufforderung zur Benutzerkontensteuerung angezeigt wurde.
+## 3.0.7
+* Dies ist ein Update zur Fehlerbehebung.
+
+## 3.0.6
+* Benutzer mit einem RIM Enterprise-Abonnement oder einem RIM Pro-Abonnement mit dem Enterprise-Zusatz können jetzt vollständig lautlose vorkonfigurierte Installer für unbeaufsichtigten Zugriff erstellen. Um einen Installer im Silent-Modus auszuführen, egal ob es sich um den Standard-Installer oder einen vorkonfigurierten Installer von einem Enterprise-Konto handelt, verwenden Sie den Befehlszeilenschalter /S (beachten Sie die Großschreibung), wenn Sie den Installer ausführen.
+
+## 3.0.5
+* Dies ist ein Update zur Fehlerbehebung.
+
+## 3.0.4
+* Dieses Update stellt die Kompatibilität mit Windows 7 wieder her.
+
+## 3.0.3
+* RIM zeigt nicht mehr fälschlicherweise die Schaltfläche "Create an Installer for Unattended Access" an, wenn Sie kein Abonnement haben.
+
+## 3.0.2
+* Wenn Sie einen oder mehrere RIM-Pässe erworben haben, können Sie nun festlegen, ob für eine bestimmte Sitzung ein RIM-Pass oder die kostenlose Version verwendet werden soll und welcher Pass verwendet wird. RIM zeigt Ihnen auch an, wie viel Zeit für den gewählten Pass noch übrig ist.
+
+## 3.0.1
+* Mit diesem Update wird die Unterstützung für die neuen persönlichen RIM-Pässe eingeführt, mit denen Sie für nur 10 US-Dollar bis zu 24 Stunden lang technischen Fernsupport oder Schulungen in Anspruch nehmen können.(https://getrim.app/signup/pass)
+* Die Schaltfläche "Vorkonfiguriertes Ziel-Installationsprogramm erstellen" heißt jetzt "Installationsprogramm für unbeaufsichtigten Zugriff erstellen".
+* Beim Umbenennen eines unbeaufsichtigten Zielcomputers wird der vorhandene Name nun ausgefüllt und zur einfachen Bearbeitung ausgewählt.
+
+## 3.0.0
+Mit dieser Version ist die öffentliche Betaversion von RIM abgeschlossen. Die RIM-Preispläne und die Einschränkungen für die kostenlose Nutzung sind nun in Kraft. Für kostenlose Konten zeigt RIM jetzt einen Nutzungszähler zusammen mit einer Kaufschaltfläche an.
+## 0.12.2
+Es wurde ein Fehler behoben, der verhinderte, dass die neue Tastenkombination Windows+Umschalt+Rücktaste in manchen Situationen funktionierte.
+## 0.12.1
+* Die Tastenkombination Strg+Umschalt+Rücktaste ist in RIM nicht mehr aktiv. Der offizielle Hotkey ist jetzt Windows+Umschalt+Rücktaste. Windows+Umschalt+Entf bleibt auch während einer Sitzung verfügbar.
+* Der neue Haupt-Hotkey von RIM, Windows+Umschalt+Rücktaste, ist jetzt auf allen Rechnern, auf denen RIM installiert ist, immer aktiv, es sei denn, eine andere Anwendung beansprucht den Hotkey zuerst. Wenn eine RIM-Sitzung auf dem Controller aktiv ist, öffnet diese Tastenkombination das RIM-Menü, wenn das Sitzungsfenster fokussiert ist, oder fokussiert das Sitzungsfenster, wenn es sich im Hintergrund befindet. Auf dem Ziel öffnet dieser Hotkey das RIM-Zielmenü, während die Sitzung aktiv ist. Auf beiden Seiten öffnet dieser Hotkey das RIM-Fenster zum Starten einer neuen Sitzung, wenn die Sitzung nicht aktiv ist.
+* Wenn ein unbeaufsichtigter Zugriff angefordert wird, fokussiert RIM nun zuverlässig den Genehmigungsdialog auf dem Zielrechner.
+* Das Fernzugriffsmodul wurde aktualisiert.
+
+## 0.12.0
+Sie können jetzt ein vorkonfiguriertes Installationsprogramm erstellen, das automatisch alle Rechner, auf denen es installiert wird, als unbeaufsichtigte Ziele in Ihrem RIM-Konto registriert.
+
+Verwenden Sie dazu die neue Schaltfläche "Create a Pre-Configured Target Installer" auf dem Bildschirm "Provide Help". Sie müssen dann einen Basisnamen für die Zielmaschine(n) eingeben; RIM fügt den Hostnamen jeder Zielmaschine automatisch zu diesem Basisnamen hinzu. Sobald die Zielcomputer registriert sind, können Sie sie wie jedes unbeaufsichtigte Ziel umbenennen. Sie können auch das Verfallsdatum des Installationsprogramms festlegen, das zwischen 7 und 30 Tagen liegen muss. Sobald RIM das Installationsprogramm erstellt hat, erhalten Sie einen Link, den Sie entweder direkt an die Zielbenutzer weitergeben oder selbst herunterladen können, um das Installationsprogramm auf andere Weise weiterzugeben.
+
+Wenn ein Zielbenutzer das vorkonfigurierte Installationsprogramm ausführt, wird ihm zunächst ein Bestätigungsdialog angezeigt, in dem erklärt wird, was das Installationsprogramm tun wird. Dieser Dialog enthält den Namen des Kontrolleurs, der den Installer erstellt hat. Dieser Bestätigungsschritt dient dazu, Missbrauch zu verhindern. Für Unternehmenskunden wird ein völlig lautloser Modus verfügbar sein.
+
+## 0.11.6
+* RIM hat jetzt eine neue Option, um einen Rechner für den unbeaufsichtigten Zugriff unter Ihrem RIM-Konto zu registrieren, ohne eine Remote-Sitzung mit einem Schlüsselwort starten zu müssen. Drücken Sie auf dem Rechner, den Sie registrieren möchten, die neue Schaltfläche "Diesen Rechner für den unbeaufsichtigten Zugriff registrieren" auf dem Bildschirm "Hilfe erhalten". Melden Sie sich dann bei Ihrem RIM-Konto an, falls Sie dies noch nicht getan haben, geben Sie einen Namen für den Rechner ein und fertig. Beachten Sie, dass wir noch an einer Möglichkeit arbeiten, das RIM-Installationsprogramm anzupassen, um eine Massenverteilung zu ermöglichen und die Einrichtung des unbeaufsichtigten Zugriffs auf Rechnern, auf die Sie noch keinen Zugriff haben, so einfach wie möglich zu gestalten.
+* RIM verhindert jetzt, dass Sie versuchen, eine unbeaufsichtigte Verbindung zu demselben Rechner zu öffnen, auf dem Sie den Controller ausführen.
+* Wir experimentieren jetzt mit einem dritten Hotkey zum Öffnen des RIM-Menüs: Windows+Umschalttaste+Rücktaste. Das bedeutet, dass es jetzt drei Optionen gibt: Windows+Umschalttaste+Entf, Windows+Umschalttaste+Rücktaste und Steuerung+Umschalttaste+Rücktaste. Wir haben noch keine endgültige Entscheidung darüber getroffen, welchen Hotkey oder welche Hotkeys wir beibehalten werden, aber wir werden uns vor dem Ende der öffentlichen Beta-Phase entscheiden. Wir freuen uns über Ihr Feedback.
+* Für die meisten Optionen im RIM-Menü gibt es jetzt Tastenkombinationen mit einem Buchstaben, die Sie drücken können, sobald Sie das Menü geöffnet haben.
+* Dieses Update bietet eine zuverlässigere Lösung für die zeitweise auftretenden Probleme, die von Anwendern berichtet wurden, dass JAWS Tastatureingaben von RIM nicht erkennt. Bitte lassen Sie uns wissen, wenn Sie weiterhin Probleme mit diesem Szenario haben.
+
+## 0.11.5
+* Dieses Update führt zwei neue Hotkeys ein. Windows+Umschalt+D trennt die Sitzung, wenn es auf einer der beiden Seiten gedrückt wird. Für den Controller wird mit Windows+Umschalt+F die Sitzung umgedreht.
+* Mit diesem Update wird verhindert, dass Tastaturmodifikatoren auf einem der beiden Geräte hängen bleiben.
+* Es gibt eine neue Menüoption, "Zielcomputer sperren", die dem Drücken von Windows+L auf dem Zielcomputer entspricht.
+* RIM hat jetzt ein "Über"-Fenster, in dem Sie die Versionsnummer überprüfen, Pneuma Solutions für Support und Feedback kontaktieren, das Handbuch lesen und das Versionsänderungsprotokoll einsehen können.
+* RIM fordert Sie am Ende einer Sitzung oder beim Schließen des Fensters "Hilfe bereitstellen" nicht mehr zu einer Rückmeldung auf.
+
+## 0.11.4
+Dieses Update behebt einige Fehler beim Neustart und der Wiederverbindung. Wir haben noch nicht alle gemeldeten Fehler diagnostiziert, aber wir konnten bei unseren eigenen Tests einige Probleme finden und beheben.
+## 0.11.3
+* RIM aktualisiert sich jetzt auf allen Rechnern im Hintergrund. RIM zeigt nun die aktuell installierte Versionsnummer im Tooltip seines Tray-Icons an. Dies ist das letzte Update, das Benutzer manuell installieren müssen, unabhängig von der Maschinenkonfiguration.
+* Wenn der Zielcomputer neu gestartet wird, aber nicht die RIM-Funktion "Reboot and Reconnect" (Neustart und Neuverbindung) verwendet wird, fragt RIM jetzt den Controller, ob er sich nach dem Neustart erneut mit dem Zielcomputer verbinden möchte. Wenn der Controller dies verneint, wartet das Ziel nicht auf eine erneute Verbindung nach dem Neustart.
+
+## 0.11.2
+* RIM aktualisiert sich nun im Hintergrund auf unbeaufsichtigten Zielrechnern. Dies ist das letzte Update, das Sie manuell auf Ihren unbeaufsichtigten Zielrechnern installieren müssen.
+* Bei der Aktualisierung vor einer interaktiven Sitzung muss RIM nicht mehr die Benutzerkontensteuerung durchlaufen. Das bedeutet, dass Nicht-Administrator-Benutzer RIM aktualisieren können, nachdem es von einem Administrator für sie installiert wurde.
+
+## 0.11.1
+Dies ist ein Update zur Fehlerbehebung. Bitte beachten Sie, dass unbeaufsichtigte Ziele weiterhin manuell aktualisiert werden müssen, indem Sie das neueste RIM-Installationsprogramm ausführen. Allerdings können Sie nun nach der Installation eine Verbindung zu einem unbeaufsichtigten Ziel herstellen, ohne dass jemand das Fenster "Hilfe erhalten" schließen muss.
+## 0.11.0
+* Die Funktion "Reboot and Reconnect" ist nun implementiert. Mit der neuen Option "Reboot and Reconnect" (Neustart und Wiederverbindung) im RIM-Menü des Controllers können Sie entweder einen Standard- oder einen Notfall-Neustart durchführen und die Sitzung automatisch fortsetzen, wenn der Neustart abgeschlossen ist. RIM stellt die Verbindung auch dann wieder her, wenn der Zielcomputer aus einem anderen Grund neu gestartet wird, z. B. wenn ein Installationsprogramm den Computer neu startet.
+* RIM versucht auch automatisch, die Verbindung wiederherzustellen, wenn die Verbindung aus irgendeinem Grund unterbrochen wird. Dies ist hilfreich bei unzuverlässigen Internetverbindungen.
+* Wenn Sie eine unbeaufsichtigte Sitzung durchführen oder "Reboot and Reconnect" verwenden, können Sie jetzt RIM verwenden, während sich der Zielcomputer im Windows-Anmeldebildschirm befindet. Beachten Sie, dass RIM die Sitzung neu verbinden muss, wenn der Zielcomputer vom Anmeldebildschirm zum Haupt-Desktop übergeht. Dies ist eine bekannte Einschränkung der aktuellen Implementierung, die wir möglicherweise in einem zukünftigen Update beheben werden.
+* RIM ist jetzt voll funktionsfähig, wenn der Zielbenutzer keine Administratorrechte auf dem Zielcomputer hat, solange der Remote Incident Manager Host-Dienst auf diesem Computer ausgeführt wird. Beachten Sie, dass für die Installation von RIM-Updates weiterhin Administratorrechte erforderlich sind. Beachten Sie auch, dass neue RIM-Versionen immer noch manuell auf unbeaufsichtigten Zielrechnern installiert werden müssen. Wir arbeiten an Lösungen für diese beiden Probleme.
+
+## 0.10.10.0
+Wenn Sie den unbeaufsichtigten Zugriff auf einen oder mehrere Zielrechner eingerichtet haben, können Sie jetzt eine Verknüpfung erstellen, um direkt auf einen dieser Rechner zuzugreifen. Klicken Sie einfach auf die Schaltfläche "Verknüpfung erstellen" unter der Liste der unbeaufsichtigten Ziele, und RIM erstellt eine Verknüpfung auf Ihrem Desktop.
+## 0.10.9
+RIM funktioniert jetzt auch auf einem Zielrechner, der kein Audiogerät hat. In Kombination mit dem bestehenden Modul für Fernzugriff eröffnet dies den Zugang zu Servern und virtuellen Maschinen, auf die bisher nur über RDP und dessen sehr suboptimale Audioausgabe mit einem Bildschirmlesegerät zugegriffen werden konnte.
+## 0.10.8
+* Wenn Sie das erste Jahr Ihres RIM Pro-Abonnements noch nicht vorbestellt haben, können Sie dies jetzt ganz einfach über die neue Schaltfläche auf dem Bildschirm "Hilfe bereitstellen" tun. Außerdem führen wir neue Preisoptionen für das Hinzufügen von zusätzlichen Controllern und gleichzeitigen Kanälen zu einem RIM Pro-Abonnement ein. Sie können bis zu zwei zusätzliche Controller-Benutzer und zwei zusätzliche Kanäle für jeweils 500 US-Dollar pro Jahr hinzufügen. RIM ist während der öffentlichen Beta-Phase weiterhin kostenlos, aber wenn Sie Ihr Abonnement jetzt vorbestellen, haben Sie einen ununterbrochenen Service, wenn die öffentliche Beta-Phase am 1. September endet.
+* Wir führen Strg+Umschalt+Rücktaste als alternativen Hotkey zum Öffnen des RIM-Menüs auf beiden Seiten der Verbindung ein. Im Moment unterstützen wir auch noch Windows+Umschalt+Entf, aber es ist geplant, Strg+Umschalt+Rücktaste als einzigen Hotkey für alle Phasen von RIM zu standardisieren.
+* Wenn Sie auf dem Bildschirm "Hilfe erhalten" auf die Schaltfläche "Stattdessen Hilfe bereitstellen" klicken, setzt RIM diese Auswahl nicht mehr als Standard, bis Sie sich bei Ihrem RIM-Konto angemeldet haben.
+* Es wurden einige JavaScript-Fehler behoben, die in seltenen Fällen auftraten.
+
+## 0.10.7
+sie können nun das Mausrad in einer Remote-Sitzung verwenden.
+## 0.10.6
+Hoffentlich wurden alle verbleibenden Probleme behoben, die dazu führten, dass der Installationsprozess hängen blieb.
+## 0.10.5
+Diese Version enthält einige Änderungen unter der Haube. Insbesondere haben wir die Installation und die zugrunde liegenden Pakete aktualisiert, um Probleme zu beheben, die dazu führten, dass die Installation hängen blieb.
+## 0.10.4
+* Es gibt jetzt eine Option im RIM-Menü, um Strg+Alt+Entf an den Zielcomputer zu senden.
+* Sie können das RIM-Menü jetzt durch einen Rechtsklick auf die Titelleiste des Sitzungsfensters öffnen. Wir planen, das RIM-Menü auch durch Klicken auf das RIM-Symbol am linken Ende der Titelleiste zu öffnen.
+
+## 0.10.3
+* Der Controller kann nun eine unbeaufsichtigte Sitzung umdrehen.
+* Der Controller kann nun einen unbeaufsichtigten Zielrechner umbenennen.
+* Es wurde ein Fehler behoben, der manchmal dazu führte, dass die Sitzung nach dem Kopieren in die Zwischenablage nicht mehr reagierte.
+* Es wurde ein Fehler behoben, der manchmal dazu führte, dass der Start des Fernzugriffsmoduls mit einem JavaScript-Fehler fehlschlug.
+
+## 0.10.2
+Es wurde ein Konflikt zwischen dem RIM Client Support NVDA Addon und dem Dropbox Addon behoben.
+## 0.10.1
+* Sie können jetzt das erste Jahr Ihres Abonnements für RIM Pro für $999 vorbestellen. Der Link zur Vorbestellung wird im Feedback-Fenster angezeigt, wenn Sie eine Remote-Sitzung beenden. Oder Sie können dem direkten Link hier folgen: [RIM Pro vorbestellen.](https://getrim.app/signup/rim_preorder)
+* Wenn Sie unbeaufsichtigte Zielrechner in Ihrem RIM-Konto haben, wird die Schaltfläche zum Starten einer unbeaufsichtigten Sitzung jetzt zuverlässiger auf dem Bildschirm "Hilfe bereitstellen" angezeigt.
+* Wenn eine Sitzung umgedreht wird, kann der ursprüngliche Controller nun die Sitzung zurückdrehen, indem er das RIM-Menü mit Windows+Umschalt+Escape öffnet.
+
