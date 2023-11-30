@@ -1,124 +1,139 @@
 ---
-title: Häufig gestellte Fragen
+title: Frequently Asked questions
 ---
 
-import Windows from "~/components/platform/Windows.astro"
-import MacOS from "~/components/platform/MacOS.astro"
+Here are answers to some common questions concerning Scribe for Meetings. When faced with an issue, please refer to this document whenever possible.  
+Don’t see your question? [Contact us.](https://pneumasolutions.com/contact/), and let’s get you squared away.
 
-Hier finden Sie Antworten auf einige häufig gestellte Fragen zu RIM. Wenn Sie mit einem Problem konfrontiert werden, beziehen Sie sich bitte auf dieses Dokument, wann immer es möglich ist. Wenn Ihre Frage in diesem Dokument nicht behandelt wird, wenden Sie sich bitte an [Contact us.](https://pneumasolutions.com/contact/)
-## Kompatibilität
-### Welche Windows-Versionen werden unterstützt?
-Wir unterstützen Windows7SP1 und höher, sowie Windows Server2012 und höher.
-### Welche Mac OS Versionen werden unterstützt?
-RIM unterstützt Mac OS Ventura und zukünftige Versionen, egal ob Intel oder Apple Silicon. Sie als Mac-Benutzer können Windows-Zielen Unterstützung bieten, und Windows-Benutzer können Ihrem Mac Unterstützung bieten.
-### Was ist mit Mac OS-Versionen vor Ventura?
-Einige Funktionen von RIM hängen von Funktionen ab, die in Ventura neu eingeführt wurden, so dass die Kompatibilität mit früheren Versionen schwierig zu realisieren ist.
-## Installation
-### Warum so viele Berechtigungsanfragen für Mac OS?
-Darauf haben wir leider keinen Einfluss, da Mac OS von uns verlangt, dass wir die für RIM erforderlichen Berechtigungen auf dem eigenen Weg beantragen. Wir haben keine Kontrolle über die UX und können daher nur so weit gehen, wie wir können, um so viele Anweisungen wie möglich zu geben.
-## Verbindungsinformationen
-### Wie reaktionsschnell ist RIM im Allgemeinen?
-Die Roundtrip-Latenz während einer RIM-Sitzung ist extrem gering. Da wir nicht auf einen zentralen Dienst angewiesen sind, werden die meisten Verbindungen direkt von einem Computer zum anderen hergestellt - dies wird als Peer-to-Peer bezeichnet. Wenn Ihre Netzwerkkonfiguration keine Peer-to-Peer-Verbindungen zulässt, greifen wir auf eine beliebige Anzahl von Relays in der ganzen Welt zurück, anstatt uns auf einen zentralen Server zu verlassen. Die Latenzzeit ist also auch dann noch sehr gering.
-### Wo befinden sich Ihre Relais?
-Derzeit bieten wir Relays an den folgenden Standorten an:
-* U.S..
-    * Virginia
-    * Kalifornien
-* Teronto, Kanada
-* London, England
-* Warschau, Polen
-* Bangalore, Indien
-* Singapur
-* Sidney, Australien
-* Sao Paulo, Brasilien
+## What is Scribe for Meetings?
 
-## Allgemeine Sitzung Fehlersuche
-### Der Zielcomputer, mit dem ich verbunden bin, reagiert nicht richtig auf Tastaturbefehle, die auf meiner Tastatur gut funktionieren. Was ist da los?
-Dies könnte auf eine der folgenden Möglichkeiten zurückzuführen sein:
-* Ein Konflikt bei der Tastaturbelegung: In seltenen Fällen kann es vorkommen, dass ein Tastaturlayout, das sich stark von Ihrem eigenen unterscheidet, RIM verwirrt. Sollte dies der Fall sein, kontaktieren Sie uns bitte mit einem Bericht, der Informationen über die Tastaturbelegung beider Rechner enthält.
-* Wenn der Zielcomputer JAWS 2024 verwendet, stört dessen einheitliche Tastaturverarbeitung manchmal die Verwendung der STRG-Taste zum Stummschalten von Sprache. Obwohl wir eine Lösung für dieses Problem gefunden haben, kann es immer noch zu Problemen kommen.
-    * Dieses Problem kann behoben werden, indem Sie die einheitliche Tastaturverarbeitung im JAWS Einstellungscenter deaktivieren.
-    * Die einheitliche Tastaturverarbeitung ist nicht notwendig, wenn der Zielbenutzer nicht auch ZoomText oder Fusion verwendet.
-* Wenn der Zielcomputer NVDA verwendet und "Tasten aus anderen Anwendungen verarbeiten" nicht aktiviert ist, kann RIM keine Tastatureingaben vom Controller verarbeiten.
-    * Beachten Sie, dass diese Einstellung standardmäßig aktiviert ist und dass es in den meisten Fällen ratsam ist, sie aktiviert zu lassen.
+Scribe for Meetings is a cloud-based technology that takes a shared presentation on platforms like Zoom, Microsoft Teams, Google Meet, and others and renders it into an accessible presentation in real time for print-impaired individuals.
 
-### Wenn ich unter Windows ein Telefongespräch beginne, verwendet RIM das interne Mikrofon, unabhängig davon, welches Mikrofon ich in den Toneinstellungen auswähle. Was ist da los?
+## Who benefits from Scribe for Meetings?
 
-Dies kann an der Intel® Smart Sound Technology für digitale Mikrofone auf einigen neueren Intel-Prozessoren liegen. Wenn Sie diese Funktion deaktivieren, sollte das Problem behoben sein. Um die Intel® Smart Sound Technology für digitale Mikrofone zu deaktivieren, gehen Sie wie folgt vor:
-1. Rufen Sie das Ausführungsfenster auf (Windows+R).
-1. Geben Sie devmgmt.msc ein
-1. Erweitern Sie in der Gerätestruktur den Eintrag "Sound, Video und Gamecontroller"
-1. Klicken Sie mit der rechten Maustaste auf "Intel® Smart Sound Technology for Digital Microphones" Wählen Sie "Gerät deaktivieren" aus dem Kontextmenü.
+First and most importantly, the millions of print-impaired persons who would otherwise not benefit from the information being presented; and, the masses of businesses large and small, government agencies, all levels of education,, and organizations who know little about accessibility but would like an affordable means of making their content more inclusive.
 
-### Das Ziel verwendet ZoomText. Wie erlebe ich die visuelle Ausgabe, die durch diese Vergrößerung dargestellt wird?
+## Why should I choose Scribe for Meetings over other products?
 
-Dies wird erreicht, indem ZoomText in den Kompatibilitätsmodus geschaltet wird. Dieser Modus ermöglicht die gemeinsame Nutzung von Bildschirmvergrößerungen über Tools wie Teams oder Zoom sowie RIM. Sie können ihn über das ZoomText-Menü aktivieren: Hilfe &gt; Erweitern &gt; Anzeigeadapter. Wählen Sie in dem sich öffnenden Dialog den Kompatibilitätsmodus aus, und ZoomText wird neu gestartet. Wir empfehlen, den Anzeigeadapter nach Abschluss der RIM-Sitzung wieder in den normalen Modus zu schalten, um eine optimale Leistung und Vergrößerungsqualität zu erzielen. 
+We’re confident there is nothing else out there that does what we do quite the way we do it. Scribe for Meetings is the first technology of its kind to synchronize with meeting platforms in real time. Sure, competitors will take note and likely roll out their imitations, and we look forward to the competition ,but unless they plan on competing on price, we feel confident you will find what you need right here.
 
-### Muss nach dem Reimaging eines Computers und der Neukonfiguration mit demselben Computernamen noch etwas getan werden, um RIM wieder zum Laufen zu bringen? 
-Entfernen Sie einfach den Computer aus Ihrem Konto, installieren Sie RIM neu und fügen Sie den Computer dann wieder zu Ihrem Konto hinzu.
+## How does Scribe for Meetings work?
 
-## Preise und Zahlungen
-### Hilfe von einem Mitarbeiter über RIM ist also völlig kostenlos, oder?
-Und ob! Die Abonnements und/oder einmaligen Zahlungen sind für Einzelpersonen und Organisationen gedacht, die Fernhilfe anbieten möchten. Sie brauchen sich nicht um ein Abonnement zu kümmern, wenn Sie die Person sind, die Hilfe erhält. Sie müssen noch nicht einmal ein Konto einrichten, wenn Sie lediglich Hilfe erhalten.
-### Ich mache eigentlich nicht regelmäßig Fernhilfe, aber ich helfe vielleicht gelegentlich einem Freund oder Familienmitglied. Gibt es auch Optionen, die kein Abonnement erfordern?
-Sicherlich! Wir berücksichtigen so viele Anwendungsfälle wie möglich.
-* Jeder kann einem Benutzer bis zu 30 Minuten pro Tag kostenlos über RIM helfen. Wenn Sie also jemandem bei der Installation einer Software helfen, ein Problem schnell beheben oder ein paar Dateien übermitteln möchten, sind Sie bei uns an der richtigen Adresse. Diese Minuten müssen nicht in einer Sitzung verbraucht werden.
-* Es gibt natürlich Situationen, in denen ein bestimmtes Problem ein wenig mehr Zeit erfordert. Oder vielleicht helfen Sie jemandem beim Erlernen einer neuen Software und werden in den nächsten Tagen immer wieder eine Verbindung herstellen. Hier kommen unsere Tagespässe und Vorfallspässe ins Spiel.
-    * Mit Vorfallspässen können Sie in einem Zeitraum von 24 Stunden so oft wie nötig eine Verbindung zu einem einzelnen Ziel herstellen.
-    * Mit Tagespässen können Sie sich innerhalb von 24 Stunden mit mehreren Zielen verbinden.
-    * Pakete mit im Voraus bezahlten Stunden ermöglichen es Ihnen, eine bestimmte Anzahl von Stunden zur Verfügung zu haben, die Sie ganz in Ihrer Freizeit nutzen können.
-* Sie können mehrere dieser Pässe und Stundenpakete sammeln und sie immer dann nutzen, wenn die Zeit dafür reif ist. Wenn Sie z. B. mehrere Tageskarten haben, müssen Sie diese nicht nacheinander nutzen. Ebenso müssen Sie Ihre im Voraus bezahlten Stunden nicht in einer Sitzung oder in einem 24-Stunden-Zeitraum nutzen.
+If you are the host:
+1. Visit [ScribeForMeetings.com,](https://scribeformeetings.com) paste the invite link for your meeting, and press “Go”.
+1. Click the button to register your meeting.
+1. If prompted, enter your email address to log in. If you’re using Scribe for Meetings on behalf of an organization, make sure to use your email address provided by that organization. If your organization has integrated Scribe for Meetings with a single sign-on (SSO) system, then you’ll be taken to the normal login process for your organization, or possibly logged in automatically. Otherwise, we’ll send you an email with a link that you can use to log into Scribe for Meetings.
+1. Enter a name for your meeting, select your PowerPoint slide deck, and press “Submit”.
+    NOTE: Scribe for Meetings currently supports Zoom meetings, Zoom webinars and Microsoft Teams. Sign up to our email list to receive a notification when we add features and additional meeting platforms.
 
-### Ich habe ein Paket mit im Voraus bezahlten Stunden gekauft. Was passiert mit meinem kostenlosen Tageskontingent?
-Gute Nachrichten: Ihr kostenloses 30-Minuten-Kontingent pro Tag bleibt bestehen! Wenn Sie eine stichwortbasierte Sitzung starten, verwendet RIM zunächst Ihr kostenloses 30-Minuten-Kontingent pro Tag. Ihre vorausbezahlte Zeit wird nach Ablauf der 30 Minuten verbraucht.
-### Wie lange reichen meine im Voraus bezahlten Stunden? Sind sie mit meinem Abonnement verknüpft?
-Die im Voraus bezahlten Stunden sind völlig unabhängig von Ihrem Abonnement. Ihre im Voraus bezahlten Stunden bleiben jedoch für ein (1) Jahr nach dem Datum ihrer ersten Nutzung auf Ihrem Konto.
-### Wie mache ich meine Arbeitsstelle auf RIM aufmerksam?
-Wir haben ein [Self-Advocacy Kit](https://sak.getrim.app) (SAK) zusammengestellt. Dabei handelt es sich um ein Paket von Briefen im E-Mail-Format, die Sie in Ihrem Namen oder im Namen eines Mitarbeiters an die zuständigen Personen senden können. RIM bietet die gleichen Funktionen wie die weniger zugänglichen Mainstream-Lösungen. Daher kann RIM eine bestehende Infrastruktur ersetzen und muss nicht zusätzlich verwendet werden. Es gilt daher als angemessene Vorkehrung für die Barrierefreiheit und sollte Ihnen von Ihrer Organisation zur Verfügung gestellt werden. Barrierefreiheit ist kein Gefallen, sondern ein Recht auf Inklusion.
-### Welche Zahlungsmethoden akzeptieren Sie?
-Wir wickeln Zahlungen über FastSpring ab, so dass wir eine Vielzahl von internationalen Zahlungsmethoden direkt akzeptieren können, darunter die wichtigsten Kreditkarten, PayPal, Alipay und viele mehr.
+Your content will be ready to launch within minutes. No knowledge of creating accessible presentations is required. As the host, you don’t need to run extra software on your device, and content can be uploaded as little as 5 minutes before the meeting.
+For the print-impaired meeting attendee, navigate to https://www.ScribeForMeetings.com, paste in your Zoom or Microsoft Teams invite link, and press “Go”. Alternatively, your meeting host might have given you a direct link to Scribe for Meetings, either in the invitation email or in the meeting itself via chat. Whichever way you get there, you’re now ready to follow along with the presentation in any web browser on any platform.
 
-### Wie funktionieren diese Pässe? Beginnt die Zeit sofort nach der Zahlung oder erst am Tag, an dem ich die Sitzung initiiere?
-Die Pässe beginnen erst, wenn der Kontrolleur die Sitzung einleitet. Wenn also die Maschine der Zielperson ausfällt und eine Fahrt in die Werkstatt erforderlich ist und eine Bearbeitung am selben Tag nicht möglich ist, können Sie einfach warten, bis die Maschine wieder einsatzbereit ist, und Ihr Tagespass wartet immer noch auf Sie.
-### Heißt das, dass diese Pässe nicht ablaufen?
-Nein. Seien Sie versichert, dass Ihre gesammelten Tageskarten geduldig auf Sie warten, um sie zu aktivieren, wann immer Sie bereit sind.
-### Was passiert, wenn ich an einem Tag, an dem ein Ereignispass verwendet wurde, eine Verbindung zu einem anderen Rechner herstelle?
-Das kommt darauf an. Wenn es sich um einen Rechner innerhalb Ihres Abonnements handelt, d. h. wenn Sie von unterwegs auf Ihren Heimrechner zugreifen, ist alles wie gewohnt. Für alle anderen Verbindungen, die nicht das ursprüngliche Ziel sind, zu dem Sie eine Verbindung hergestellt haben, gilt das übliche 30-Minuten-Kontingent.
-### Ich habe ein aktives persönliches Abonnement. Kann ich trotzdem einem Nutzer außerhalb der Zielgruppe bis zu 30 Minuten lang oder über einen Pass helfen?
-Ja! Ihr tägliches 30-Minuten-Kontingent gilt weiterhin für alle Geräte außerhalb Ihres Abonnements. Darüber hinaus ersetzt der Erwerb eines Abonnements keine bestehenden Pässe, die Sie möglicherweise besitzen.
-### Ich habe ein persönliches Abonnement, und der Zielcomputer hat ein Hardware-Upgrade erhalten. Zählt Rim dies als einen Rechnerwechsel?
-Nur wenn RIM neu installiert werden muss. Während also ein Festplatten-Upgrade oder eine andere Situation, die eine Neuinstallation von Windows erfordert, als Rechnerwechsel gilt, gilt das Upgrade des Arbeitsspeichers nicht.
-### Unser Unternehmen hat das Pro-Abonnement gekauft, aber wir haben zwei Techniker - einen, der tagsüber den Helpdesk macht, und einen Systemwartungstechniker, der abends arbeitet. Könnten wir dem abendlichen Systemadministrator einen Controller-Platz zuweisen?
-Auf jeden Fall. In Situationen, in denen mehrere Techniker RIM verwenden, bieten wir bei Bedarf bis zu zwei (2) zusätzliche Controller-Plätze für $50 pro Monat pro Platz - $500 pro Jahr pro Platz - zusätzlich zum Pro-Plan an. Dadurch wird es für mehrere Controller an verschiedenen Arbeitsplätzen oder Büros einfacher, Fernsupport zu leisten.  
-Wenn Sie mehrere Controller-Plätze haben, können Sie zusätzliche Kanäle für diese Plätze erwerben, damit Sitzungen gleichzeitig laufen können. Jeder zusätzliche Kanal kostet 50 US-Dollar pro Monat oder 500 US-Dollar pro Jahr. 
+## How difficult is it to install Scribe for Meetings?
 
-## Sicherheit
-### Sind RIM-Sitzungen verschlüsselt?
-Ja. Alle Sitzungen auf allen Plattformen, egal ob es sich um direkte Peer-to-Peer-Verbindungen oder um Verbindungen über einen Relay handelt, werden von Ende zu Ende mit Datagram Transport Layer Security (DTLS) verschlüsselt. Dies ist die gleiche Technologie, die auch im HTTPS-Protokoll verwendet wird, das moderne Websites aus Sicherheitsgründen einsetzen.
-### Kann Pneuma Solutions Sitzungen abhören, die von der öffentlichen Cloud weitergeleitet werden?
-Nein. Die Aushandlung des Sitzungsschlüssels und die Verschlüsselung werden Ende-zu-Ende zwischen dem Controller und dem Ziel durchgeführt. Mit anderen Worten: Alles wird verschlüsselt, noch bevor es Ihr Gerät verlässt. Auf diese Weise leitet der Cloud-Dienst die Daten lediglich so weiter, wie sie sind, so dass es für den Dienst unmöglich ist, die Daten zu entschlüsseln.
-### Welche Maßnahmen wurden ergriffen, um Schwachstellen bei der Remotecodeausführung (RCE) zu verhindern?
-Der gesamte RIM-Code, der Eingaben aus dem Netz ausgesetzt ist, ist in [speichersicheren Programmiersprachen](https://www.memorysafety.org/docs/memory-safety/) einschließlich Rust und JavaScript geschrieben.
-### Ist RIM HIPAA-konform?
-Ja. Die beste Konfiguration wäre in diesem Fall ein Einsatz vor Ort, also nehmen Sie bitte [Kontakt mit uns auf](https://pneumasolutions.com/contact/), wenn Ihr Anwendungsfall davon abhängt.
-### Müssen irgendwelche Ports auf dem Ziel oder dem Controller geöffnet werden?
-Nein und nein.
-### Welche Verbindungen müssen im Netzwerk erlaubt sein, damit RIM funktioniert?
-Bei der Nutzung der öffentlichen Cloud ist eine https-Verbindung zu [getrim.app](https://getrim.app) erforderlich. Im Optimalfall reicht dies für RIM aus, um eine Peer-to-Peer-Verbindung zwischen dem Controller und dem Ziel herzustellen. Es ist jedoch hilfreich, UDP-Verbindungen über die Ports 19302 und 3478 (die Standard-Ports für STUN und TURN) zuzulassen. Dadurch wird sichergestellt, dass RIM bei Verwendung eines Relays nicht auf eine TCP-Verbindung über Port 443 zurückgreifen muss.
-### Läuft RIM im Hintergrund, und wenn ja, wird es in meiner Command+Tab-Liste angezeigt?
-RIM läuft im Hintergrund, um automatische Updates zu verarbeiten, unbeaufsichtigte/aufgeforderte Verbindungsanfragen zu empfangen und die Verwendung des globalen Tastaturbefehls Option+Umschalt+Rückwärts zu ermöglichen. Es wird nicht zu anderen Zwecken angerufen, und es werden keine persönlich identifizierbaren Informationen übertragen.  
-RIM erscheint nicht in Ihrer Befehl+Tab-Liste, aber es erscheint in den Statusmenüs, die Informationen über Ihren Akku, Ihre WiFi-Verbindung usw. enthalten.
-## Fernzugriffsmodul
-### Muss der Zielcomputer für die erstmalige Verwendung des Moduls für die entfernte Erreichbarkeit konfiguriert werden?
-Nein, überhaupt nicht! Es gibt keine Dialogfelder, Bildschirme zur Abfrage von Berechtigungen oder Ähnliches.
-### Funktioniert das Modul für die entfernte Barrierefreiheit auf sicheren Bildschirmen wie dem Sperrbildschirm?
-Ja! Da der RIM-Host mit erhöhten Rechten ausgeführt wird, können wir das Modul für die entfernte Barrierefreiheit für sichere Bildschirme nutzen. Die einzige Ausnahme ist das Anmeldefenster von FileVault.
-## Unbeaufsichtigte Sitzungen
-### Werden Sprachunterhaltungen während unbeaufsichtigter Sitzungen unterstützt?
-Nein. Aufgeforderte Sitzungen unterstützen jedoch Telefongespräche.
-### Wenn ich einen unbeaufsichtigten Rechner aus meinem Controller-Konto lösche, wird dann automatisch die Berechtigung für das Ziel entzogen?
-Ja. Sobald ein unbeaufsichtigtes Ziel entfernt wird, wird die Änderung sofort wirksam. Wenn der Zielcomputer ausgeschaltet oder anderweitig nicht mit dem Internet verbunden ist, wird die Änderung wirksam, sobald eine Internetverbindung auf diesem Computer hergestellt wird.
-### Der Zielcomputer wurde nach der Installation von Updates und Treibern neu gestartet und erfordert ein Kennwort für die Anmeldung. Wie wird die Sitzung von hier an fortgesetzt?
-In den meisten Fällen, insbesondere wenn die FileVault-Festplattenverschlüsselung aktiviert ist, muss der Zielbenutzer das Kennwort manuell eingeben. RIM kann auf einem verschlüsselten Mac nicht gestartet werden, bevor er vollständig angemeldet ist.
-### Ich habe mehrere Rechner, die die Rolle des Controllers übernehmen. Wird die Liste der Rechner, die für den unbeaufsichtigten Zugriff eingerichtet sind, auf allen Rechnern angezeigt?
-Ja. Die Liste der Rechner, die für den unbeaufsichtigten Zugriff konfiguriert sind, ist in Ihrem Konto gespeichert und wird daher automatisch ausgefüllt.
+Scribe for Meetings is not an installed application. It is a cloud service, so nothing more than a browser is needed to enjoy a meeting. For presenters, Other than uploading their content in advance of the meeting, the process was intentionally designed to be simple. There is nothing to install to your computer or device other than Zoom, Microsoft Teams or similar meeting platforms.
+Enterprise customers can host Scribe for Meetings on their own servers. Please get in touch with us for details.
+
+## I see an attendee named “Scribe for Meetings” trying to join my meeting. What’s going on?
+
+That’s the Scribe bot. This bot watches the screen in your meeting, so it can see what slide is currently being displayed and provide the accessible version of that slide in real time to print-impaired attendees. The Scribe bot will not disrupt your meeting in any way, and it will not collect any information other than what content is currently being displayed through screen sharing. If your meeting has a waiting room, please promptly admit the Scribe bot into the meeting. Otherwise, Scribe for Meetings will not work.
+
+## I’m a print-impaired meeting attendee, and I don’t know if the meeting I’m attending has been registered through Scribe for Meetings. What can I do?
+
+Go to [ScribeForMeetings.com](https://scribeformeetings.com), paste in the Zoom or Microsoft Teams invite link for your meeting, and press “Go”. If the meeting has been registered with Scribe for Meetings, then you’re ready to follow along with accessible slides. If not, you can sign up to be notified by email when the meeting has been registered with Scribe for Meetings.
+
+## I frequently attend Zoom or Microsoft Teams meetings. What’s the easiest way for me to find out if a meeting is registered with Scribe for Meetings, and if it is, view the accessible content?
+
+Scribe for Meetings has an [extension for Chrome and Edge](https://chrome.google.com/webstore/detail/scribe-for-meetings/bikolphfhfiambndbiimigilhfekcfpn) that checks the availability on Scribe for Meetings of any Zoom or Microsoft Teams meeting you attend. With a single hotkey, you can view the accessible content if the meeting is registered, or request a follow-up notification if the meeting is registered with Scribe for Meetings later.
+
+## I’m a print-impaired meeting attendee. Do you have any resources to help me ask the meeting host to use Scribe for Meetings?
+
+Yes; check out our [Scribe for Meetings Self-Advocacy Kit](https://sak.scribeformeetings.com). Here you’ll find a variety of pre-written letters that you can personalize, then copy and paste into an email.
+
+## Can Scribe for Meetings convert a presentation to accessible file formats for offline viewing?
+
+Yes. When creating the meeting, the presenter can optionally choose to provide their presentation for downloading in the following file formats:
+* An accessible web page, with all of the same features as the live presentation, including read aloud
+* Tagged PDF
+* MP3, via text-to-speech in about a dozen languages
+* DAISY, text plus audio
+* EPUB
+* Microsoft Word
+* Braille: Grade 1, Grade 2, Unified English Braille, and many other languages
+
+The PDF and Microsoft Word options support large print. This option, and other options such as speaking rate for audio output, can be chosen by attendees when they download the slides.
+This feature is not enabled by default; the presenter must choose to allow it. To enable this feature when registering a meeting, check the checkbox called “Allow attendees to download accessible versions of slides.” This choice will only take effect for the meeting currently being registered.
+For a meeting where this feature is enabled, as soon as the presenter has shown a slide, the web page where attendees view accessible slides will include a link called “Download Slides”. To download the slides, an attendee should follow these steps:
+1. Click the “Download Slides” link.
+1. If prompted, enter your email address and follow the instructions to log in.
+1. Choose the accessible format you want.
+1. For some formats, you can optionally customize settings, such as text-to-speech voice, speaking rate, braille translation table, or large print.
+1. Click the “Prepare Download” button.
+1. Watch your email for the download link. For most formats, the email will arrive within a few minutes. Conversion to audio can take much longer, depending on the length of the slide deck, because speech synthesis is a more time-consuming process than other conversions.
+
+## I host many meetings, and I want to allow my attendees to download the slides for all of these meetings. Can I turn this feature on by default?
+
+Yes. Follow these steps:
+1. 
+Go to ScribeForMeetings.com.
+1. If there’s a “Log In” link at the top of the page, click it, enter your email address, and follow the instructions to log into Scribe for Meetings.
+1. Click “Settings”, then “Meeting Defaults”.
+1. Check the checkbox called “Allow attendees to download accessible versions of slides”, then click “Save”.
+
+## I want to protect my slides from unauthorized copying and distribution. Does Scribe for Meetings support this?
+
+Unfortunately, Scribe for Meetings cannot stop your attendees from copying the text of your slides. However, if you don’t allow the slides to be downloaded, it won’t be easy for attendees to copy your slides, because they will have to copy one slide at a time. Also, note that in practice, this is no different from what any attendee can already do by taking screenshots of your slides.
+
+## Is Scribe for Meetings multilingual?
+
+Yes. Scribe for Meetings can render content in any of 140 languages, again with no extra effort from the presenter.
+
+## Do I need to slow down my presentation to make sure that print-impaired attendees can keep up?
+
+No. Scribe for Meetings has a feature called Dynamic Visual Representation, or DVR mode for short, that allows print-impaired attendees to read your accessible slides at their own pace. An attendee can pause the live presentation, go back to a slide they’ve already read, move forward at their own pace, and then continue with the live presentation when they’re ready.
+To use DVR mode, the attendee should press either the Suspend Presentation button or the Previous Slide button. These buttons are labeled as such for screen reader users, and for mouse users who hover over them. Visually, they’re at the bottom of the page and look like the Pause and Previous Track buttons in a media player. When the user presses one of these buttons, the live presentation will pause, and for the Previous Slide button, it will return to the previous slide. The user can then use the Previous Slide and Next Slide buttons to go through the slides at their own pace, and the Go Live button to return to the live presentation. These buttons look like the Previous Track, Next Track, and Play buttons in a media player.  
+Note that DVR mode only allows attendees to review slides that have been shown since they joined the presentation. If a print-impaired attendee is late for your presentation, then they missed the same slides that any other late attendee would have missed.
+
+## I have a print-impaired attendee who would benefit from having my content spoken aloud but isn’t comfortable with a full screen reader. Can Scribe for Meetings help?
+
+Yes. Our Read Aloud feature will speak your slides using the voices provided by your user’s device and web browser, while drawing a box around each word as it is spoken to help the user follow along visually. For Windows users, we highly recommend the Microsoft Edge browser for this feature, because Edge offers outstanding voices in several languages, free of charge. However, this feature also works with all other major platforms and browsers, including mobile devices.  
+To start reading the current slide aloud, press the Read Aloud button, which is at the bottom of the screen and looks like a speaker. While Scribe for Meetings is reading the slide aloud, it will show controls to stop reading (the button with a square icon), pause or resume, go back or forward (the buttons that look like Previous Track and Next Track buttons in a media player), speed up and slow down reading, or change the voice. These controls will go away as soon as reading is finished or as soon as the user stops it.  
+Note that Read Aloud and DVR mode (see above) can be used together, to allow print-impaired attendees to read slides both in their own way and at their own pace.
+
+## I have a print-impaired attendee who needs my slides in a large font but doesn’t need a full-screen magnification program. Can Scribe for Meetings help?
+
+Yes. Scribe for Meetings displays your slides in a way that makes them accessible for attendees with all types of content requirements. If large fonts are needed, an attendee can use their browser’s page zoom feature to adjust the font size of the slides, without requiring the user to continually scroll back and forth. Scribe for Meetings will also automatically display the text in the user’s preferred color scheme, whether it’s the usual dark-on-light, light-on-dark (also known as dark mode), or a custom scheme.  
+
+## Wait! What’s going on here? Why do my slides look so different in Scribe for Meetings than they do in my presentation?
+
+Every aspect of how Scribe for Meetings displays your slides is optimized for accessibility, for attendees with all types of print impairments. Since Scribe for Meetings is meant to be used alongside your existing meeting platform, attendees are always free to flip back to the main meeting window to see the slides as they’re displayed in your presentation without accessibility.
+
+## I don’t use PowerPoint. Can I still make my presentation accessible with Scribe for Meetings?
+
+Scribe for Meetings can make your screen-shared slides accessible no matter what app you use to present them, as long as you can provide your slide deck in PowerPoint format. Other presentation apps such as Keynote and Google Slides can convert their slide decks to PowerPoint format, so you can use these with Scribe for Meetings.
+
+## Scribe for Meetings isn’t showing the accessible versions of my slides during the presentation, or it’s skipping some slides. What’s wrong?
+
+Make sure that you’re presenting your slides in a full-screen slide show, and that you’ve set up Zoom or Microsoft Teams screen sharing to share that slide show with your audience. If you’re using PowerPoint for Windows to run your presentation, then once you’ve opened PowerPoint, make sure you press F5 to enter slide show mode.
+[Learn more about how to use Zoom screen sharing with PowerPoint.](https://support.zoom.us/hc/en-us/articles/203395347-Screen-Sharing-a-PowerPoint-Presentation)
+[Learn how to use Microsoft Teams screen sharing with PowerPoint.](https://support.microsoft.com/en-us/office/share-powerpoint-slides-in-a-teams-meeting-fc5a5394-2159-419c-bc59-1f64c1f4e470)
+
+## How does Scribe for Meetings handle pictures and graphics in my slides?
+
+If you already wrote descriptions (also known as alt tags or captions) for the graphical content in your slides, Scribe for Meetings will use those. Otherwise, Scribe for Meetings will use a cloud-based image description service powered by machine learning to automatically add alt tags for your graphics. If those pictures contain text, Scribe for Meetings will also use optical character recognition (OCR) to make that text accessible.
+
+## My slides have charts, diagrams, or other complex graphics. Can Scribe for Meetings handle them?
+
+The short answer is, not for the most part. We’re still working on this. Because the Scribe Augmented Document Remediation platform is powered by machine learning, as we receive more documents and slide decks with complex graphics, we’ll be able to train our model to make those graphics accessible. But, for now, you’ll just have to try it and see.
+
+## Does Scribe for Meetings work with meeting platforms other than Zoom and Microsoft Teams, like Jitsi Meet, Google Meet, Slack, Amazon Chime, or BlueJeans?
+
+Not yet, but it will soon.
+
+## How do people within our organization log into Scribe for Meetings?
+
+Scribe for Meetings currently supports two options for authentication. The simplest option is our email-based login process. Just enter your email address, and we’ll send a link that you can use to log in; no password is needed. For organizations with more stringent security requirements, we can also integrate with single sign-on (SSO) systems that implement the SAML standard, either via the [InCommon](https://www.incommon.org/) federation or using bilateral metadata exchange. Our SAML service provider uses the open-source Shibboleth SP package and was implemented in partnership with [Signet, Inc.,](https://www.signet.id/) an identity management and access control firm founded by an architect of Shibboleth. Note that we support SSO through a variety of identity providers; in addition to Shibboleth IdP, we’ve tested with Azure Active Directory. When your organization signs up with Scribe for Meetings, we’ll offer SSO onboarding, covered by the setup fee.
+
+## What is the future of Scribe for Meetings?
+
+Scribe, the platform behind our Scribe line of products, is actively learning every time a document is processed. The machine learning powered Augmented Document Remediation technology gets smarter with each page, moving us that much closer to 100% accuracy. The benefits spill over into all our products, making Scribe for Meetings an application that will only get better the more you use it.
