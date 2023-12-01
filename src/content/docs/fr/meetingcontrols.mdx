@@ -1,80 +1,71 @@
 ---
-title: The RIM Management Dashboard
+title: Contrôle des réunions
 ---
 
-import Windows from "~/components/platform/Windows.astro"
-import MacOS from "~/components/platform/MacOS.astro"
+Une fois dans la réunion, le contenu des diapositives sera présenté en synchronisation avec le partage d'écran du présentateur. Lorsqu'une nouvelle diapositive se présente, il se passe ce qui suit :
+1. Vous entendrez un bip.
+1. Le contenu s'affiche à l'écran et est lu par un lecteur d'écran existant.
 
-RIM features a  web-based dashboard to facilitate various machine and account management tasks. You can manage your existing unattended computers, create preconfigured installers for target computers, and much more.  
-It should be noted that the feature set of the dashboard is largely dependent on which subscription tier your account is under. For example, enterprise users can assign machines to target groups, as well as create silent installers. On the other hand, anyone (including personal users) can create custom installers for their unattended machines.
+## Contrôles et fonctions de la réunion
 
-## Locating the Dashboard
+Scribe for Meetings offre plusieurs moyens de contrôler le rendu. Ces boutons cliquables disposent également de raccourcis clavier faciles à utiliser. Les commandes sont les suivantes :
+* Suspendre la présentation : Met en pause la présentation en direct, en maintenant votre place sur la diapositive actuellement affichée.      
+    * Bien que les nouvelles diapositives ne soient pas annoncées en temps réel, vous ne les manquerez pas car Scribe for Meetings continue de surveiller silencieusement la présentation pour les mises à jour.
+    * Lorsqu'une présentation est suspendue, cette commande se transforme en bouton "Go Live".
+* Diapositive précédente : Permet d'accéder à la diapositive affichée précédente, s'il en existe une.
+    * S'il n'y a pas de diapositive précédente, ce bouton n'apparaît pas.
+    * Appuyer sur ce bouton suspend la présentation en direct.
+    * Notez que si vous assistez à une réunion et que la présentation est déjà en cours, ce bouton ne vous permettra pas de revenir à la diapositive 1.
+* Diapositive suivante : Permet d'accéder à la diapositive suivante, si elle est disponible.
+    * Si vous visualisez déjà la dernière diapositive, ce bouton n'apparaît pas.
+    * En appuyant sur ce bouton, vous interrompez la présentation en direct.
+* Lire à haute voix : Commence à lire la diapositive en cours d'affichage à l'aide de la synthèse vocale du système.
+    * L'activation du mode de lecture à haute voix permet d'activer des commandes de transport supplémentaires (boutons de rembobinage, de lecture/pause et d'avance rapide) ainsi que des boutons permettant de ralentir ou d'accélérer la lecture.
+* Télécharger les diapositives : Permet de télécharger les diapositives dans différents formats.
+    * Cette option ne s'affiche que si l'organisateur a autorisé le téléchargement des diapositives.
 
-If you're a controller, the easiest way to get to the dashboard is through the main RIM interface. Clicking the RIM Dashboard button will automatically open the dashboard in your default browser, with the login already taken care of.  
-If you are a network administrator who does not have RIM installed, you can simply log into your account on the RIM website and your dashboard will appear.
+## Téléchargement des diapositives
 
-## Managing Targets
+Si l'organisateur a autorisé le téléchargement des diapositives, Scribe for Meetings permet de télécharger les diapositives dans plusieurs formats accessibles. Pour télécharger les diapositives, suivez la procédure ci-dessous :
+1. lorsque vous êtes dans une réunion, activez le lien "Télécharger les diapositives".
+	1. Si vous n'êtes pas connecté, votre adresse électronique vous sera demandée, puis un lien de vérification vous sera envoyé par courrier électronique.
+	1. En cliquant sur ce lien, vous vous connecterez, ce qui vous permettra de poursuivre le processus de création de la réunion.
+1. Choisissez le format de fichier dans lequel vous souhaitez que vos diapositives soient présentées. Vous avez le choix entre
+    * Une page web accessible, avec toutes les mêmes fonctionnalités que la présentation en direct, y compris la lecture à haute voix
+    * PDF étiqueté
+        * Prend en charge les gros caractères
+    * MP3, avec synthèse vocale dans une douzaine de langues
+        * Des paramètres supplémentaires pour la voix et le débit sont proposés avec cette conversion.
+    * DAISY, texte et audio
+        * Des paramètres supplémentaires pour la voix et la vitesse d'élocution sont proposés avec cette conversion.
+    * EPUB
+    * Microsoft Word
+        * Supporte les gros caractères
+    * Braille
+        * Première année (EBAE)
+        * 2e année (EBAE)
+        * Braille anglais unifié (UEB)
+        * et de nombreuses autres langues
+1. Après avoir personnalisé tous les paramètres optionnels associés au formulaire choisi, cliquez sur le bouton "Préparer le téléchargement".
+1. Surveillez votre courrier électronique pour le lien de téléchargement. Pour la plupart des formats, l'e-mail arrivera en quelques minutes. La conversion en format audio peut prendre beaucoup plus de temps, en fonction de la longueur du jeu de diapositives, car la synthèse vocale est un processus qui prend plus de temps que les autres conversions.
+1. En cliquant sur le lien, le téléchargement commence instantanément.
 
-When you click the "Configure Targets" link, you will arrive at a page that allows you to manage all the machines you have configured for unattended access. You can click on any one of these machines in order to manage it. Once inside, you will be able to:
-* Rename the target
-* Move the target to a different group (more on target groups later)
-* Delete the target
+## Référence des commandes clavier
 
-## Target Groups (for Pro Accounts and Above)
+La plupart des navigateurs de bureau peuvent tirer parti des commandes clavier associées à la plupart des fonctions de Scribe For Meetings. Comme ces commandes peuvent varier en fonction de la plate-forme et du navigateur, nous énumérons ci-dessous tous les raccourcis possibles.
 
-Say for instance you're workgroup is spread out among several different locations. Or maybe you want to designate groups of machines to your routine maintenance techs. Target groups allow you to do just that. In order to do this, simply click the "Create Target Group" button, name your group, and submit.  
-You may have as many target groups as is needed for your use case. 
+*Note pour les utilisateurs de macOS VoiceOver* : Si vous utilisez le navigateur Chrome, vos modificateurs seront CTRL et Option. Cela entraînera malheureusement un conflit avec VoiceOver, à moins que la commande passthrough (CTRL+Option+Tab) ne soit utilisée avant d'entrer les commandes.
 
-### Access Control (for Enterprise Organizations)
+Action | Windows | Chrome sur macOS | Safari sur macOS
+--- | --- | --- | ---
+Suspendre la présentation | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Passer en direct | Alt+Shift+L | CTRL+Option+L | CTRL+L
+Diapositive suivante | Alt+Shift+N | CTRL+Option+N | CTRL+N
+Diapositive précédente | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Lecture à voix haute | Alt+Shift+R | CTRL+Option+R | CTRL+R
+Pause de la lecture à haute voix | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Continuer la lecture à haute voix | Alt+Shift+C | CTRL+Option+C | CTRL+C
+Arrêter la lecture à haute voix | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Retourner en arrière | Alt+Shift+B | CTRL+Option+B | CTRL+B
+Aller vers l'avant | Alt+Shift+N | CTRL+Option+N | CTRL+N
 
-If your organizations assign a support technician to a specific set of machines, you probably want to ensure they only have access to that specific set. This is where the access control setting for target groups comes in.  
-When you click on a target group, you are given options to manage the machines in the group, as well as the group itself. The access control section is where you may grant access to this group on a per-account basis. Simply enter the email address of the account you wish to add, then click the "Give Access" button. Once this is done, you will be presented with a table of accounts that are given access to this group. Below each account is a "Revoke Access" button. This button does not require further confirmation.  
-It should be noted that all organization administrators are automatically granted access to manage any and all groups that are created under the organization.
-
-## Setting up a Preconfigured RIM Installer (Pro or above)
-
-One of the easiest ways to set up a machine for unattended or prompted connections is by creating a custom installer. This is incredibly useful if you are configuring mass deployments, or even as a simpler way to get RIM up and running on an end user's computer you plan on providing support for on the regular.
-
-IN order to do this:
-1. In the target management screen, click the "Build Target Installer" button.
-1. You will first be asked if you want this machine to be configured for fully unattended access, or for prompted access in which the user has to accept a prompt to initiate the connection.
-1. You will then be asked for a target group assignment. Note that the target group selection will automatically go to your chosen target group if you initiate the installer configuration from your group's page.
-1. You will be asked how long you want this installer to be valid for. It can be valid for anywhere between 7 to 30 days. Note that this timeframe only affects the functionality of the installation package. In other words, the machine's RIM configuration will not be disabled when the installation expires.
-1. You are then given the option to assign a bass name. Any machine provisioned via this installation package will have this base name assigned to it.
-1. You will then be presented with a checkbox that lets you opt into an email notification when a user installs RIM via this installer.
-1. If you are an enterprise admin, you will see a checkbox that allows you to build the installer as an MSI package. This option is useful for mass deployment of a custom installer to a machine cluster that will be designated to the given target group.
-1. You will be asked to provide an installer name, and optionally some notes. These are for internal records and will not appear within the created installer.
-1. Click on "Build Installer." You will be presented with the download link that you can either copy to the clipboard and send to your end user. Alternatively, you may download the installer directly for use in mass deployments.
-
-Now that you have your installer, it can be run in one of two ways. In either case, the machine will be added to your list of machines in both your account as well as the RIM client after the installer is complete.
-
-### Normal Execution
-
-The user will get a prompt when running the installer, containing the following information:
-* The technician's name along with their organization, if applicable
-* the nature of the connection, I.E whether a prompt is required or not
-
-The user can choose to either answer yes or no to the installation. Answering no will cancel the installation. After the installer finishes, the user will get a prompt informing them that their machine is now set up for remote access.
-
-### Silent Install (Enterprise Installers Only)
-
-A silent install can be initiated by running the executable installer with the */S* command line parameter. This is useful when installing RIM as part of a mass deployment routine.
-
-## Session History
-You can view your entire history of past sessions through the RIM dashboard. The session history currently contains the date and time of each session, the name of the computer you connected to, and the duration of the session. You may also choose to add comments to a session via the "Add Comment" link within the session row. This is useful for adding notes on the current status of an incident for your own sake as well as for the sake of organization administrators.
-
-## Managing your Subscription (Personal and Pro Plans)
-The dashboard allows you to easily view and manage your RIM subscription details. Upon clicking the "manage subscription" link, you can:
-* Upgrade your plan
-* Update your payment method
-* Cancel recurring payments
-
-### Upgrading your Plan
-
-You can easily upgrade your subscription. If you are on a monthly plan, you will be prorated the remaining charge from the new amount, with the full new amount being charged for subsequent months. Clicking "Upgrade Subscription" reveals a page nearly identical to the initial plan selection page. There are a few notable differences which we will outline below:
-* You cannot downgrade your plan to one with fewer machines. You can, however, upgrade from a monthly to a yearly plan with the same number of machines as your current plan. In order to downgrade, you would need to cancel your plan, wait for it to expire, then initiate a new plan with fewer machines.
-* Enterprise plans, including the enterprise addon, cannot be acquired directly through this page.
-
-### Canceling Recurring Payments
-
-When you click "Cancel Automatic Renewal," you will be asked for confirmation, after which your subscription will be set to expire at the end of the current term.

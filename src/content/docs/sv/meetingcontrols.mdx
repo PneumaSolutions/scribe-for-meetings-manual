@@ -1,80 +1,71 @@
 ---
-title: The RIM Management Dashboard
+title: Kontroll av möten
 ---
 
-import Windows from "~/components/platform/Windows.astro"
-import MacOS from "~/components/platform/MacOS.astro"
+När du är inne i mötet kommer bildinnehållet att presenteras synkroniserat med presentatörens skärmdelning. När en ny bild presenteras kommer följande att hända:
+1. Du kommer att höra ett pip.
+1. Innehållet presenteras på skärmen och läses upp av en befintlig skärmläsare.
 
-RIM features a  web-based dashboard to facilitate various machine and account management tasks. You can manage your existing unattended computers, create preconfigured installers for target computers, and much more.  
-It should be noted that the feature set of the dashboard is largely dependent on which subscription tier your account is under. For example, enterprise users can assign machines to target groups, as well as create silent installers. On the other hand, anyone (including personal users) can create custom installers for their unattended machines.
+## Kontroller och funktioner för mötet
 
-## Locating the Dashboard
+Scribe for Meetings erbjuder flera sätt att styra renderingen. Dessa klickbara knappar har också lättanvända kortkommandon. Kontrollerna inkluderar:
+* Avbryt presentation: Pausar livepresentationen och håller din plats vid den bild som visas för tillfället.      
+    * Även om nya bilder inte meddelas i realtid kommer du inte att missa något eftersom Scribe for Meetings fortfarande tyst bevakar presentationen för uppdateringar.
+    * När en presentation avbryts förvandlas denna kontroll till en "gå Live"-knapp.
+* Föregående bild: Går till den tidigare visade bilden, om en sådan finns tillgänglig.
+    * Om det inte finns någon föregående bild visas inte den här knappen.
+    * Om du trycker på den här knappen avbryts livepresentationen.
+    * Observera att om du deltar i ett möte och presentationen redan är igång kommer den här knappen inte att kunna ta dig tillbaka till bild 1.
+* Nästa bild: Går till nästa bild, om en sådan finns tillgänglig.
+    * Om du redan tittar på den senaste bilden visas inte den här knappen.
+    * Om du trycker på den här knappen avbryts livepresentationen.
+* Läs högt: Börjar läsa den aktuella bilden med hjälp av systemets text-till-tal-röst.
+    * Om du startar högläsningsläget aktiveras ytterligare transportkontroller (knapparna för att spola tillbaka, spela upp/pausa och snabbspola framåt) samt knappar för att sakta ner eller snabba upp talet.
+* Ladda ner bilder: Låter dig ladda ner bilderna i flera olika format.
+    * Detta alternativ visas endast om arrangören har tillåtit nedladdning av bilderna.
 
-If you're a controller, the easiest way to get to the dashboard is through the main RIM interface. Clicking the RIM Dashboard button will automatically open the dashboard in your default browser, with the login already taken care of.  
-If you are a network administrator who does not have RIM installed, you can simply log into your account on the RIM website and your dashboard will appear.
+## Ladda ner bilder
 
-## Managing Targets
+Förutsatt att arrangören har tillåtit nedladdning av bilder, erbjuder Scribe for Meetings nedladdning av bilderna i flera tillgängliga format. För att ladda ner bilder, följ nedanstående procedur:
+1. när du är i ett möte, aktivera länken "Ladda ner bilder".
+	1. Om du inte är inloggad kommer du att bli ombedd att ange din e-postadress, varefter du kommer att få en verifieringslänk skickad till dig.
+	1. Om du klickar på denna länk loggas du in och kan fortsätta skapa mötet.
+1. Välj det filformat som du vill att dina bilder ska presenteras som. Dina alternativ inkluderar:
+    * En tillgänglig webbsida, med alla samma funktioner som i livepresentationen, inklusive uppläsning
+    * Taggad PDF
+        * Stödjer stora tryck
+    * MP3, via text-till-tal på ett dussintal språk
+        * Ytterligare inställningar för röst och talhastighet erbjuds med denna konvertering.
+    * DAISY, text plus ljud
+        * Ytterligare inställningar för röst och talhastighet erbjuds med denna konvertering.
+    * EPUB
+    * Microsoft Word
+        * Stöd för stora tryck
+    * Punktskrift
+        * Årskurs 1 (EBAE)
+        * Årskurs 2 (EBAE)
+        * Unifierad engelsk punktskrift (UEB)
+        * och många andra språk
+1. När du har anpassat alla valfria inställningar som är kopplade till din valda formt klickar du på knappen "Förbered nedladdning".
+1. Håll utkik efter nedladdningslänken i din e-post. För de flesta format kommer e-postmeddelandet inom några minuter. Konvertering till ljud kan ta mycket längre tid, beroende på längden på bildspelet, eftersom talsyntes är en mer tidskrävande process än andra konverteringar.
+1. Om du klickar på länken påbörjas nedladdningen direkt.
 
-When you click the "Configure Targets" link, you will arrive at a page that allows you to manage all the machines you have configured for unattended access. You can click on any one of these machines in order to manage it. Once inside, you will be able to:
-* Rename the target
-* Move the target to a different group (more on target groups later)
-* Delete the target
+## Referens för tangentbordskommandon
 
-## Target Groups (for Pro Accounts and Above)
+De flesta webbläsare kan dra nytta av de tangentbordskommandon som är associerade med de flesta funktioner i Scribe For Meetings. Eftersom dessa kommandon kan variera beroende på plattform och webbläsare, kommer vi att lista alla möjliga genvägar nedan.
 
-Say for instance you're workgroup is spread out among several different locations. Or maybe you want to designate groups of machines to your routine maintenance techs. Target groups allow you to do just that. In order to do this, simply click the "Create Target Group" button, name your group, and submit.  
-You may have as many target groups as is needed for your use case. 
+*Anmärkning för användare av macOS VoiceOver*: Om du använder webbläsaren Chrome kommer dina modifierare att vara CTRL och Option. Detta kommer tyvärr att orsaka en konflikt med VoiceOver om inte kommandot för genomgång (CTRL+Option+Tab) används innan kommandon anges.
 
-### Access Control (for Enterprise Organizations)
+Åtgärd | Windows | Chrome på macOS | Safari på macOS
+--- | --- | --- | ---
+Avbryt presentationen | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Gå live | Alt+Shift+L | CTRL+Option+L | CTRL+L
+Nästa bild | Alt+Shift+N | CTRL+Option+N | CTRL+N
+Föregående bild | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Läs högt | Alt+Shift+R | CTRL+Option+R | CTRL+R
+Pausa högläsning | Alt+Shift+P | CTRL+Option+P | CTRL+P
+Fortsätt läsa högt | Alt+Shift+C | CTRL+Option+C | CTRL+C
+Sluta läsa högt | Alt+Shift+S | CTRL+Option+S | CTRL+S
+Gå bakåt | Alt+Shift+B | CTRL+Option+B | CTRL+B
+Gå framåt | Alt+Shift+N | CTRL+Option+N | CTRL+N
 
-If your organizations assign a support technician to a specific set of machines, you probably want to ensure they only have access to that specific set. This is where the access control setting for target groups comes in.  
-When you click on a target group, you are given options to manage the machines in the group, as well as the group itself. The access control section is where you may grant access to this group on a per-account basis. Simply enter the email address of the account you wish to add, then click the "Give Access" button. Once this is done, you will be presented with a table of accounts that are given access to this group. Below each account is a "Revoke Access" button. This button does not require further confirmation.  
-It should be noted that all organization administrators are automatically granted access to manage any and all groups that are created under the organization.
-
-## Setting up a Preconfigured RIM Installer (Pro or above)
-
-One of the easiest ways to set up a machine for unattended or prompted connections is by creating a custom installer. This is incredibly useful if you are configuring mass deployments, or even as a simpler way to get RIM up and running on an end user's computer you plan on providing support for on the regular.
-
-IN order to do this:
-1. In the target management screen, click the "Build Target Installer" button.
-1. You will first be asked if you want this machine to be configured for fully unattended access, or for prompted access in which the user has to accept a prompt to initiate the connection.
-1. You will then be asked for a target group assignment. Note that the target group selection will automatically go to your chosen target group if you initiate the installer configuration from your group's page.
-1. You will be asked how long you want this installer to be valid for. It can be valid for anywhere between 7 to 30 days. Note that this timeframe only affects the functionality of the installation package. In other words, the machine's RIM configuration will not be disabled when the installation expires.
-1. You are then given the option to assign a bass name. Any machine provisioned via this installation package will have this base name assigned to it.
-1. You will then be presented with a checkbox that lets you opt into an email notification when a user installs RIM via this installer.
-1. If you are an enterprise admin, you will see a checkbox that allows you to build the installer as an MSI package. This option is useful for mass deployment of a custom installer to a machine cluster that will be designated to the given target group.
-1. You will be asked to provide an installer name, and optionally some notes. These are for internal records and will not appear within the created installer.
-1. Click on "Build Installer." You will be presented with the download link that you can either copy to the clipboard and send to your end user. Alternatively, you may download the installer directly for use in mass deployments.
-
-Now that you have your installer, it can be run in one of two ways. In either case, the machine will be added to your list of machines in both your account as well as the RIM client after the installer is complete.
-
-### Normal Execution
-
-The user will get a prompt when running the installer, containing the following information:
-* The technician's name along with their organization, if applicable
-* the nature of the connection, I.E whether a prompt is required or not
-
-The user can choose to either answer yes or no to the installation. Answering no will cancel the installation. After the installer finishes, the user will get a prompt informing them that their machine is now set up for remote access.
-
-### Silent Install (Enterprise Installers Only)
-
-A silent install can be initiated by running the executable installer with the */S* command line parameter. This is useful when installing RIM as part of a mass deployment routine.
-
-## Session History
-You can view your entire history of past sessions through the RIM dashboard. The session history currently contains the date and time of each session, the name of the computer you connected to, and the duration of the session. You may also choose to add comments to a session via the "Add Comment" link within the session row. This is useful for adding notes on the current status of an incident for your own sake as well as for the sake of organization administrators.
-
-## Managing your Subscription (Personal and Pro Plans)
-The dashboard allows you to easily view and manage your RIM subscription details. Upon clicking the "manage subscription" link, you can:
-* Upgrade your plan
-* Update your payment method
-* Cancel recurring payments
-
-### Upgrading your Plan
-
-You can easily upgrade your subscription. If you are on a monthly plan, you will be prorated the remaining charge from the new amount, with the full new amount being charged for subsequent months. Clicking "Upgrade Subscription" reveals a page nearly identical to the initial plan selection page. There are a few notable differences which we will outline below:
-* You cannot downgrade your plan to one with fewer machines. You can, however, upgrade from a monthly to a yearly plan with the same number of machines as your current plan. In order to downgrade, you would need to cancel your plan, wait for it to expire, then initiate a new plan with fewer machines.
-* Enterprise plans, including the enterprise addon, cannot be acquired directly through this page.
-
-### Canceling Recurring Payments
-
-When you click "Cancel Automatic Renewal," you will be asked for confirmation, after which your subscription will be set to expire at the end of the current term.
