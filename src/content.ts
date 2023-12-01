@@ -26,6 +26,7 @@ export const pageOrder: string[] = [
   "welcome",
   "systemspecs",
   "gettingconnected",
+  "meetingcontrols",
   "makingmeetings",
   "dashboard",
   "localization",
