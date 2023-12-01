@@ -31,5 +31,4 @@ export const pageOrder: string[] = [
   "localization",
   "faq",
   "plans",
-  "changelog",
 ]
