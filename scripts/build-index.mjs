@@ -39,7 +39,7 @@ function buildIndex(lang) {
   })
   // 2. Send the dataset in JSON format
   client
-    .index(`rim-manual-${lang}`)
+    .index(`sfm-manual-${lang}`)
     .addDocuments(JSON.parse(JSON.stringify(data)))
     .then((res) => console.log(res)) //show the result
 }
