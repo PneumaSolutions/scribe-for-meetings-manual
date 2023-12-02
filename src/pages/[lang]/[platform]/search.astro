@@ -14,7 +14,7 @@ const client = new MeiliSearch({
   host: import.meta.env.MEILISEARCH_HOST,
   apiKey: import.meta.env.MEILISEARCH_SEARCH_KEY,
 })
-const index = client.index(`rim-manual-${lang}`)
+const index = client.index(`sfm-manual-${lang}`)
 
 const query = Astro.url.searchParams.get("q")
 if (!query) {
