@@ -33,7 +33,7 @@ if (pageIndex < 0) {
   </head>
   <body>
     <div>
-      <h2>Scribe for Meetings</h2>
+      <h1>Scribe for Meetings</h1>
       <LanguageSwitcher origLang={lang} platform={platform} slug={slug} />
       <form role="search" action={`/${lang}/${platform}/search/`} method="get">
         <label for="q"><UIString key="search.label" /></label>
@@ -82,7 +82,7 @@ if (pageIndex < 0) {
       <div class="col ps-md-2 pt-2">
         <main>
           <div class="page-header pt-3">
-            <h1>{data.title}</h1>
+            <h2>{data.title}</h2>
           </div>
           <slot />
         </main>
